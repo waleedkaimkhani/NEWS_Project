@@ -84,6 +84,8 @@ NEWS_Project/
 |   |├── middlewares.py      # Middleware for custom behaviors
 |   |├── parallel_scrape.py  # Script to run spiders in parallel
 |├── logs/                   # Directory for log files
+|├── data/                   # Directory for log files
+|├── stats/                   # Directory for log files
 |├── scraped_articles.db     # SQLite database for storing articles
 |├── requirements.txt        # Python dependencies
 |├── scrapy.cfg              # Scrapy configuration file
