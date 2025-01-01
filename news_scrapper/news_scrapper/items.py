@@ -6,7 +6,7 @@ from scrapy import Item, Field
 
 class NewsArticleItem(Item):
     """Define structured data model for news articles"""
-    title = Field()
+    heading = Field()
     content = Field()
     author = Field()
     date = Field()

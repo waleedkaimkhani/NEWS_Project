@@ -100,13 +100,16 @@ class DawnLatestSpider(Spider):
 
     def parse(self, response):
         self.logger.info("Starting daily latest news scrape")
-        articles = response.css('article.story')
+        articles = response.xpath('/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/article')
+       
         articles_found = len(articles)
         self.logger.info(f"Found {articles_found} articles on latest news page")
         
         # Only process the first page of latest news
         for article in articles:
-            link = article.css('h2 a::attr(href)').get()
+           
+            link = article.xpath('.//div/div[1]/figure/div/a/@href').get()
+            
             if link and not self.is_article_scraped(link):
                 yield Request(url=link, callback=self.parse_article)
                 self.stats['articles_found'] += 1
@@ -114,14 +117,20 @@ class DawnLatestSpider(Spider):
     def parse_article(self, response):
         try:
             # Extract article details
-            title = response.css('h1.story__title::text').get()
-            content = ' '.join(response.css('div.story__content p::text').getall())
-            author = response.css('span.story__byline a::text').get()
-            date_str = response.css('span.story__time::attr(datetime)').get()
-            category = response.css('span.story__category a::text').get()
+          
+          
+            heading = response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/h2/a/text()').get()
             
+            content = ' '.join(response.xpath('/html/body/div[2]/div[1]/div/article/div[3]/div[2]/p/text()').getall())
+            
+            author = '|'.join(response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/div[1]/span[1]/a/text()').getall())
+            
+            date_str = response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/div[1]/span[2]/span[1]/span[2]/text()').get()
+            
+            category = response.xpath('/html/body/div[2]/div[1]/div/article/div[4]/div[1]/div[2]/div[1]/div/div/div/span/a/span/text()').get()
+           
             # Clean and process the data
-            title = title.strip() if title else None
+            heading = heading.strip() if heading else None
             content = content.strip() if content else None
             author = author.strip() if author else None
             category = category.strip() if category else None
@@ -140,15 +149,15 @@ class DawnLatestSpider(Spider):
             c.execute('''
                 INSERT INTO articles (url, title, publish_date, category)
                 VALUES (?, ?, ?, ?)
-            ''', (response.url, title, publish_date, category))
+            ''', (response.url, heading, publish_date, category))
             conn.commit()
             conn.close()
 
             self.stats['articles_scraped'] += 1
-            self.logger.info(f"Scraped article: {title}")
+            self.logger.info(f"Scraped article: {heading}")
 
             yield NewsArticleItem(
-                        title=title,
+                        heading=heading,
                         content=content,
                         author=author,
                         date=date_str,

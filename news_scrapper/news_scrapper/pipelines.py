@@ -13,13 +13,13 @@ class NewsValidationPipeline:
         adapter = ItemAdapter(item)
         
         # Check required fields
-        required_fields = ['title', 'url']
+        required_fields = ['heading', 'url']
         for field in required_fields:
             if not adapter.get(field):
                 raise DropItem(f"Missing {field} in {adapter.get('url')}")
         
         # Clean text fields
-        text_fields = ['title', 'content', 'author', 'category']
+        text_fields = ['heading', 'content', 'author', 'category']
         for field in text_fields:
             if adapter.get(field):
                 adapter[field] = adapter[field].strip()
@@ -91,7 +91,7 @@ class SQLitePipeline:
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
                 adapter['url'],
-                adapter['title'],
+                adapter['heading'],
                 adapter.get('content'),
                 adapter.get('author'),
                 adapter.get('date'),

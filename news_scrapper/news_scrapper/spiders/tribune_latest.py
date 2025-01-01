@@ -63,10 +63,10 @@ class TribuneLatestSpider(Spider):
         c = conn.cursor()
         c.execute('''
             CREATE TABLE IF NOT EXISTS tribune_articles
-            (url TEXT PRIMARY KEY,
+            (url TEXT,
              title TEXT,
              date_scraped TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-             publish_date DATE,
+             publish_date TEXT,
              category TEXT)
         ''')
         conn.commit()
@@ -87,32 +87,36 @@ class TribuneLatestSpider(Spider):
         self.logger.info("Starting daily Tribune latest news scrape")
         
         # Tribune's latest news structure
-        articles = response.css('div.story')
+        articles = response.xpath('/html/body/div[1]/div[4]/section/div/div/div[1]/div/div/div/ul[1]//li')
+        
         articles_found = len(articles)
         self.logger.info(f"Found {articles_found} articles on Tribune latest news page")
         
         for article in articles:
-            link = article.css('h2 a::attr(href)').get()
+            link = article.xpath('.//div/div[1]/div/a/@href').get()
             if link:
                 # Ensure full URL
+                
                 if not link.startswith('http'):
                     link = f'https://tribune.com.pk{link}'
                 
                 if not self.is_article_scraped(link):
+                    print(link)
                     yield Request(url=link, callback=self.parse_article)
                     self.stats['articles_found'] += 1
 
     def parse_article(self, response):
         try:
             # Extract article details based on Tribune's HTML structure
-            title = response.css('h1.story-title::text').get()
-            content = ' '.join(response.css('div.story-content p::text').getall())
-            author = response.css('span.story-author a::text').get()
-            date_str = response.css('time::attr(datetime)').get()
-            category = response.css('div.category-name a::text').get()
+            heading = response.xpath('//*[@id="main-section"]/section/div[1]/div/div[1]/div/h1/text()').get()
+            content = ' '.join(response.xpath('//*[@id="main-section"]/section/div[1]/div/div[1]/div/div/div/div/span[2]/p/text()').getall())
+            author = response.xpath('//*[@id="main-section"]/section/div[1]/div/div[1]/div/span/div[1]/span[1]/a/text()').get()
+            date_str = response.xpath('//*[@id="main-section"]/section/div[1]/div/div[1]/div/span/div[1]/span[2]/text()').get()
+            category = response.xpath('/html/body/div[1]/div[3]/div/div/ul/li[2]/text()').get()
             
             # Clean data
-            title = title.strip() if title else None
+            print (heading,content,author,date_str,category)
+            heading = heading.strip() if heading else None
             content = content.strip() if content else None
             author = author.strip() if author else None
             category = category.strip() if category else None
@@ -131,15 +135,15 @@ class TribuneLatestSpider(Spider):
             c.execute('''
                 INSERT INTO tribune_articles (url, title, publish_date, category)
                 VALUES (?, ?, ?, ?)
-            ''', (response.url, title, publish_date, category))
+            ''', (response.url, heading, publish_date, category))
             conn.commit()
             conn.close()
 
             self.stats['articles_scraped'] += 1
-            self.logger.info(f"Scraped Tribune article: {title}")
+            self.logger.info(f"Scraped Tribune article: {response.url}")
 
             yield NewsArticleItem(
-                    title=title,
+                    heading=heading,
                     content=content,
                     author=author,
                     date=date_str,
