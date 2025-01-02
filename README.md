@@ -1,61 +1,56 @@
-# NEWS_Project
+# NEWS Project
 
-A Python-based news scraping and analysis project that collects and processes news articles from various sources. This project uses **Scrapy** for web scraping and performs sentiment analysis and other NLP-based assessments on the collected data.
+A web scraping project built with Scrapy to collect news articles from Pakistani news websites (Dawn and Tribune), automated using Prefect.
 
 ## Features
 
 - Scrapes news articles from websites like [Dawn](https://www.dawn.com) and [Tribune](https://www.tribune.com).
-- Stores scraped articles in a SQLite database.
-- Logs activity and errors for debugging purposes.
-- Includes scripts for running crawlers in parallel.
-- Prepares data for sentiment analysis and NLP tasks (future enhancement).
+- Redis-based URL deduplication with 24-hour expiry
+- JSON export of scraped articles
+- Detailed logging system
+- Daily statistics tracking
+- Automated workflow using Prefect
+- Scheduled article scraping
+
+## Requirements
+
+- Python 3.7+
+- Redis
+- Docker (recommended) or WSL2 for Windows users
+- Prefect
 
 ## Installation
 
-### Prerequisites
+```bash
+# Clone repository
+git clone https://github.com/waleedkaimkhani/NEWS_Project.git
+cd NEWS_Project
 
-- Python 3.8 or higher
-- Git
-- Virtualenv (optional but recommended)
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 
-### Steps
+# Install dependencies
+pip install -r requirements.txt
 
-1. Clone the repository:
+# Start Redis
+docker run --name redis -p 6379:6379 -d redis
 
-   ```bash
-   git clone https://github.com/waleedkaimkhani/NEWS_Project.git
-   cd NEWS_Project
-   ```
-
-2. Create a virtual environment (optional but recommended):
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Windows: venv\Scripts\activate
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Set up Scrapy:
-   Ensure Scrapy is properly configured by checking the `scrapy.cfg` file in the root directory.
+# Start Prefect server
+prefect server start
+```
 
 ## Usage
 
-### Running the Crawlers
-
-#### 1. Run Individual Spiders
-
-To run a specific spider (e.g., the Dawn spider):
-
+### Manual Spider Execution
 ```bash
-scrapy crawl dawn_spider
+scrapy crawl dawn_latest
+scrapy crawl tribune_latest
 ```
 
-#### 2. Run Parallel Spiders
+
+#### Run Parallel Spiders
 
 To run multiple spiders in parallel, use the `parallel_scrape.py` script:
 
@@ -63,14 +58,37 @@ To run multiple spiders in parallel, use the `parallel_scrape.py` script:
 python news_scrapper/parallel_scrape.py
 ```
 
-### Logging
-Logs are stored in the `logs/` directory and include timestamps for easier debugging. Each run creates a new log file based on the current date.
+### Automated Pipeline
+```bash
+# Start Prefect agent
+prefect agent start -q default
 
-### Database
-Scraped articles are stored in a SQLite database named `scraped_articles.db`. Use a SQLite browser or Python to query the database.
+# Deploy workflow
+python deployment.py
 
-### Configuration
-Adjust settings in `news_scrapper/settings.py` to modify Scrapy configurations like download delay, user agent, etc.
+# View runs in Prefect UI
+http://localhost:4200
+```
+
+## Prefect Pipeline
+
+The project uses Prefect for workflow automation:
+- Scheduled scraping every 12 hours
+- Parallel execution of spiders
+- Error handling and retries
+- Email notifications for failures
+- Monitoring through Prefect UI
+
+## Output
+
+- Articles saved as JSON in `data/` directory
+- Logs stored in `logs/` directory
+- Statistics saved in `stats/` directory
+- Pipeline runs visible in Prefect UI
+
+## Project Structure
+
+```
 
 ## Project Structure
 
@@ -84,29 +102,14 @@ NEWS_Project/
 |   |├── middlewares.py      # Middleware for custom behaviors
 |   |├── parallel_scrape.py  # Script to run spiders in parallel
 |├── logs/                   # Directory for log files
-|├── data/                   # Directory for log files
-|├── stats/                   # Directory for log files
-|├── scraped_articles.db     # SQLite database for storing articles
+|├── data/                   # Directory where json are stored
+|├── stats/                  # Directory where stats for e.g no: of articles scrapped
+|├── news_pipeline.py        # prefect pipeline which run scrapper and then stores data in postgress db
+|├── deployment.py           # prefect flow scheduling script 
 |├── requirements.txt        # Python dependencies
 |├── scrapy.cfg              # Scrapy configuration file
 ```
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch for your feature/bugfix:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Description of changes"
-   ```
-4. Push to your forked repository:
-   ```bash
-   git push origin feature-name
-   ```
-5. Submit a pull request.
 
 ## Future Enhancements
 
@@ -122,7 +125,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 - [Scrapy](https://scrapy.org/) for the web scraping framework.
 - Local news websites for providing data.
-
+- prefect for open source workflow orchectration
+- postgress for open source relational DB
 ---
 
 Feel free to contribute or raise issues to improve this project!
