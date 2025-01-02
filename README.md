@@ -103,7 +103,7 @@ NEWS_Project/
 |   |├── parallel_scrape.py  # Script to run spiders in parallel
 |├── logs/                   # Directory for log files
 |├── data/                   # Directory where json are stored
-|├── stats/                  # Directory where stats for e.g no: of articles scrapped
+|├── stats/                  # Directory where stats for e.g no of articles scrapped
 |├── news_pipeline.py        # prefect pipeline which run scrapper and then stores data in postgress db
 |├── deployment.py           # prefect flow scheduling script 
 |├── requirements.txt        # Python dependencies
