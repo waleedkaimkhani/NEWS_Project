@@ -1,5 +1,5 @@
 # dawn_latest.py
-import sqlite3
+import redis
 from scrapy import Spider, Request
 from datetime import datetime, timedelta
 import re
@@ -29,8 +29,9 @@ class DawnLatestSpider(Spider):
 
     def __init__(self, *args, **kwargs):
         super(DawnLatestSpider, self).__init__(*args, **kwargs)
-        self.db_path = 'scraped_articles.db'
-        self.init_db()
+        
+        self.redis_client = redis.Redis(host='localhost', port=6379, db=0)
+        self.url_expiry = 86400 
         self.today = datetime.now().date()
         
         # Initialize statistics
@@ -71,33 +72,13 @@ class DawnLatestSpider(Spider):
         logger.addHandler(fh)
         logger.setLevel(logging.DEBUG)
 
-    def init_db(self):
-        """Initialize SQLite database"""
-        conn = sqlite3.connect(self.db_path)
-        c = conn.cursor()
-        c.execute('''
-            CREATE TABLE IF NOT EXISTS articles
-            (url TEXT PRIMARY KEY,
-             title TEXT,
-             date_scraped TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-             publish_date DATE,
-             category TEXT)
-        ''')
-        conn.commit()
-        conn.close()
-
     def is_article_scraped(self, url):
-        
-        """Check if article URL has been scraped today"""
-        conn = sqlite3.connect(self.db_path)
-        c = conn.cursor()
-        c.execute('''
-            SELECT url FROM articles 
-            WHERE url = ? AND date(date_scraped) = date('now')
-        ''', (url,))
-        result = c.fetchone()
-        conn.close()
-        return result is not None
+        """Check if article URL exists in Redis"""
+        return bool(self.redis_client.get(f"dawn:url:{url}"))
+
+    def mark_article_scraped(self, url):
+        """Mark URL as scraped in Redis with expiration"""
+        self.redis_client.setex(f"dawn:url:{url}", self.url_expiry, "1")
 
     def parse(self, response):
 
@@ -147,15 +128,8 @@ class DawnLatestSpider(Spider):
                     self.logger.warning(f"Could not parse date: {date_str}")
 
             # Store in database
-            conn = sqlite3.connect(self.db_path)
-            c = conn.cursor()
-            c.execute('''
-                INSERT INTO articles (url, title, publish_date, category)
-                VALUES (?, ?, ?, ?)
-            ''', (response.url, heading, publish_date, category))
-            conn.commit()
-            conn.close()
-
+            self.mark_article_scraped(response.url)
+            
             self.stats['articles_scraped'] += 1
             self.logger.info(f"Scraped article: {heading}")
 

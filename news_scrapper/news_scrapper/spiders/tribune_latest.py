@@ -1,5 +1,5 @@
 # tribune_latest.py
-import sqlite3
+import redis
 from scrapy import Spider, Request
 from datetime import datetime
 import re
@@ -28,8 +28,8 @@ class TribuneLatestSpider(Spider):
 
     def __init__(self, *args, **kwargs):
         super(TribuneLatestSpider, self).__init__(*args, **kwargs)
-        self.db_path = 'scraped_articles.db'
-        self.init_db()
+        self.redis_client = redis.Redis(host='localhost', port=6379, db=0)
+        self.url_expiry = 86400 
         self.today = datetime.now().date()
         self.stats = defaultdict(int)
         self._logger = None
@@ -59,30 +59,13 @@ class TribuneLatestSpider(Spider):
         logger.addHandler(fh)
         logger.setLevel(logging.DEBUG)
 
-    def init_db(self):
-        conn = sqlite3.connect(self.db_path)
-        c = conn.cursor()
-        c.execute('''
-            CREATE TABLE IF NOT EXISTS tribune_articles
-            (url TEXT,
-             title TEXT,
-             date_scraped TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-             publish_date TEXT,
-             category TEXT)
-        ''')
-        conn.commit()
-        conn.close()
-
     def is_article_scraped(self, url):
-        conn = sqlite3.connect(self.db_path)
-        c = conn.cursor()
-        c.execute('''
-            SELECT url FROM tribune_articles 
-            WHERE url = ? AND date(date_scraped) = date('now')
-        ''', (url,))
-        result = c.fetchone()
-        conn.close()
-        return result is not None
+        """Check if article URL exists in Redis"""
+        return bool(self.redis_client.get(f"tribune:url:{url}"))
+
+    def mark_article_scraped(self, url):
+        """Mark URL as scraped in Redis with expiration"""
+        self.redis_client.setex(f"tribune:url:{url}", self.url_expiry, "1")
 
     def parse(self, response):
         
@@ -132,14 +115,8 @@ class TribuneLatestSpider(Spider):
                     self.logger.warning(f"Could not parse date: {date_str}")
 
             # Store in database
-            conn = sqlite3.connect(self.db_path)
-            c = conn.cursor()
-            c.execute('''
-                INSERT INTO tribune_articles (url, title, publish_date, category)
-                VALUES (?, ?, ?, ?)
-            ''', (response.url, heading, publish_date, category))
-            conn.commit()
-            conn.close()
+            
+            self.mark_article_scraped(response.url)
 
             self.stats['articles_scraped'] += 1
             self.logger.info(f"Scraped Tribune article: {response.url}")

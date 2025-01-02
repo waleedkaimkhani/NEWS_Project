@@ -1,15 +1,12 @@
-2024-12-31 21:14:14 [scrapy.addons] INFO: Enabled addons:
+2025-01-02 18:55:55 [scrapy.addons] INFO: Enabled addons:
 []
-2024-12-31 21:14:14 [scrapy.extensions.telnet] INFO: Telnet Password: 1d07debb508d73d9
-2024-12-31 21:14:15 [py.warnings] WARNING: C:\Users\WALEED\AppData\Roaming\Python\Python311\site-packages\scrapy\extensions\feedexport.py:406: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
-  exporter = cls(crawler)
-
-2024-12-31 21:14:15 [scrapy.middleware] INFO: Enabled extensions:
+2025-01-02 18:55:55 [scrapy.extensions.telnet] INFO: Telnet Password: 692e5a0539cb40c2
+2025-01-02 18:55:55 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.feedexport.FeedExporter',
  'scrapy.extensions.logstats.LogStats']
-2024-12-31 21:14:15 [scrapy.crawler] INFO: Overridden settings:
+2025-01-02 18:55:55 [scrapy.crawler] INFO: Overridden settings:
 {'BOT_NAME': 'news_scrapper',
  'DOWNLOAD_DELAY': 2,
  'FEED_EXPORT_ENCODING': 'utf-8',
@@ -22,7 +19,7 @@
  'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
  'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
                '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-2024-12-31 21:14:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2025-01-02 18:55:55 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
@@ -36,229 +33,207 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2024-12-31 21:14:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+2025-01-02 18:55:55 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2024-12-31 21:14:15 [scrapy.middleware] INFO: Enabled item pipelines:
+2025-01-02 18:55:55 [scrapy.middleware] INFO: Enabled item pipelines:
 ['news_scrapper.pipelines.NewsValidationPipeline',
- 'news_scrapper.pipelines.DuplicateCheckPipeline',
- 'news_scrapper.pipelines.SQLitePipeline',
  'news_scrapper.pipelines.JsonExportPipeline']
-2024-12-31 21:14:15 [scrapy.core.engine] INFO: Spider opened
-2024-12-31 21:14:15 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2024-12-31 21:14:15 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
-2024-12-31 21:14:18 [tribune_latest] INFO: Starting daily Tribune latest news scrape
-2024-12-31 21:14:18 [tribune_latest] INFO: Found 10 articles on Tribune latest news page
-2024-12-31 21:14:20 [tribune_latest] WARNING: Could not parse date: December 31, 2024
-2024-12-31 21:14:20 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519299/xi-jinping-declares-no-one-can-stop-taiwan-unification
-2024-12-31 21:14:20 [scrapy.core.scraper] WARNING: Dropped: Missing title in https://tribune.com.pk/story/2519299/xi-jinping-declares-no-one-can-stop-taiwan-unification
-{'author': 'AFP',
- 'category': 'World',
- 'content': 'China\'s President Xi Jinping said Tuesday that "no one can stop" '
-            'unification with Taiwan, as he addressed the nation in a New '
-            "Year's speech. Beijing claims the self-ruled island as part of "
-            'its territory, and has said it will not renounce the use of force '
-            'to bring it under its control. China has intensified pressure on '
-            'the democratic island in recent years, and has staged three '
-            'rounds of major military drills since President Lai Ching-te came '
-            'to power in May. The last of these earlier this month were the '
-            'largest in years according to Taiwanese officials, although '
-            'Beijing has not officially confirmed the manoeuvres. "Chinese '
-            'people on both sides of the Taiwan Strait are one family. No one '
-            'can sever our blood ties, and no one can stop the historical '
-            'trend of the reunification of the motherland," Xi said in a '
-            "speech broadcast on state media. Xi's comments come just weeks "
-            'before Donald Trump takes office in the United States. Taiwan is '
-            'a key point of contention between Beijing and Washington, which '
-            'does not officially recognise Taiwan diplomatically but is its '
-            'strategic ally and largest supplier of weapons. The US-China '
-            'relationship may sour further after Trump is inaugurated on '
-            'January 20, with the president-elect vowing more tariffs to '
-            'punish what he calls unfair trade practices by China. Beijing '
-            'denies the allegations.',
- 'date': 'December 31, 2024',
- 'heading': "Xi Jinping declares 'no one can stop' Taiwan unification",
- 'url': 'https://tribune.com.pk/story/2519299/xi-jinping-declares-no-one-can-stop-taiwan-unification'}
-2024-12-31 21:14:22 [tribune_latest] WARNING: Could not parse date: December 31, 2024
-2024-12-31 21:14:23 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519298/ines-de-ramon-played-major-role-in-brad-pitt-finalizing-divorce-with-angelina-jolie
-2024-12-31 21:14:23 [scrapy.core.scraper] WARNING: Dropped: Missing title in https://tribune.com.pk/story/2519298/ines-de-ramon-played-major-role-in-brad-pitt-finalizing-divorce-with-angelina-jolie
-{'author': 'Pop Culture & Art',
- 'category': 'Entertainment',
- 'content': 'Brad Pitt and Angelina Jolie have officially finalized their '
-            'divorce, concluding an eight-year legal battle that began in 2016 '
-            'when Jolie filed for separation. According to People Magazine, '
-            'the divorce settlement was signed on December 30, 2024, closing a '
-            'turbulent chapter for the former couple, who were married for '
-            'just two years but shared a decade-long relationship. The '
-            'settlement resolves their divorce but leaves unresolved disputes '
-            'over the French winery Chateau Miraval, which has been a source '
-            'of contention. Jolie’s lawyer, James Simon, described her as '
-            '“relieved” yet “exhausted” by the prolonged legal process. He '
-            'noted that Jolie has focused on finding peace and healing for her '
-            'family, having left all shared properties with Pitt. '
-            'Transitioning from the legal battle, Pitt appears ready to move '
-            'forward with his life. According to Daily Mail, he plans to marry '
-            'Los Angeles-based jewelry designer Ines de Ramon in 2025. Sources '
-            'close to Pitt stated that finalizing the divorce clears the path '
-            'for his future plans, including efforts to mend relationships '
-            'with his six children. However, three of his children have '
-            'already dropped "Pitt" from their names since the couple’s split, '
-            'highlighting the challenges he faces in rebuilding familial ties. '
-            'De Ramon, who began dating Pitt in November 2022, is reportedly '
-            'eager to expand their family. Sources suggest she urged Pitt to '
-            'expedite the divorce process to focus on their future together. '
-            'This highly publicized divorce underscores the difficulties of '
-            'navigating personal and legal struggles under the spotlight. Both '
-            'Pitt and Jolie now look to move forward separately, with Jolie '
-            'focusing on family healing and Pitt pursuing new beginnings',
- 'date': 'December 31, 2024',
- 'heading': 'Ines de Ramon played major role in Brad Pitt finalizing divorce '
-            'with Angelina Jolie',
- 'url': 'https://tribune.com.pk/story/2519298/ines-de-ramon-played-major-role-in-brad-pitt-finalizing-divorce-with-angelina-jolie'}
-2024-12-31 21:14:26 [tribune_latest] WARNING: Could not parse date: December 31, 2024
-2024-12-31 21:14:26 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519293/houthis-vow-to-defend-after-us-strikes-in-yemen
-2024-12-31 21:14:26 [scrapy.core.scraper] WARNING: Dropped: Missing title in https://tribune.com.pk/story/2519293/houthis-vow-to-defend-after-us-strikes-in-yemen
-{'author': 'AFP',
- 'category': 'World',
- 'content': 'Yemen’s Houthi spokesperson Mohammed Abdulsalam said that the '
-            'country would continue to defend itself after several US strikes '
-            'targeted facilities in the capital Sanaa on Tuesday. The US '
-            'military said that it carried out strikes against Houthi targets '
-            'in Sanaa and coastal locations in Yemen on Monday and Tuesday. '
-            '“On Dec. 30 and 31, US Navy ships and aircraft targeted a Houthi '
-            'command and control facility and advanced conventional weapon '
-            '(ACW) production and storage facilities that included missiles '
-            'and uncrewed aerial vehicles (UAV),” the US military’s Central '
-            'Command said in a post on X. The attacks began Monday and were '
-            'carried out by US Navy ships and aircraft that also struck '
-            'Huthi-controlled coastal regions of Yemen, the US Central Command '
-            '(CENTCOM) said. It also said US Navy and Air Force aircraft had '
-            'destroyed "seven cruise missiles and one-way attack UAVs over the '
-            'Red Sea," using an acronym for unmanned aerial drones. "There '
-            'were no injuries or damage to US personnel or equipment in either '
-            'incident," it said. One witness in Yemen\'s Huthi-controlled '
-            'capital Sanaa reported several strikes in different locations. '
-            'Another reported raids on Sanaa on the Defense Ministry and '
-            'having heard a powerful explosion. Huthi spokesperson Mohammed '
-            'Abdulsalam called the strikes "an American aggression" and "a '
-            'blatant violation of the sovereignty of an independent state and '
-            'a blatant support for Israel." The rebels said earlier Tuesday '
-            'that they had fired two missiles at Israel, hours after the '
-            'Israeli military said it had intercepted a projectile launched '
-            'from the country. Houthi in Yemen has been attacking commercial '
-            'shipping in the Red Sea for more than a year to try to enforce a '
-            'naval blockade on Israel, saying they are acting in solidarity '
-            'with Palestinians in Israel’s year-long war in Gaza. The Huthis '
-            'control much of war-torn Yemen and have been firing missiles and '
-            'drones at Israel, and at ships in the Red Sea and Gulf of Aden, '
-            'in what they say is solidarity with Palestinians during the '
-            'Israel-Hamas war in the Gaza Strip.',
- 'date': 'December 31, 2024',
- 'heading': 'Houthis vow to defend after US strikes\xa0in\xa0Yemen',
- 'url': 'https://tribune.com.pk/story/2519293/houthis-vow-to-defend-after-us-strikes-in-yemen'}
-2024-12-31 21:14:27 [tribune_latest] WARNING: Could not parse date: December 31, 2024
-2024-12-31 21:14:28 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519296/sindh-police-to-impound-vehicles-without-licences-starting-jan
-2024-12-31 21:14:28 [scrapy.core.scraper] WARNING: Dropped: Missing title in https://tribune.com.pk/story/2519296/sindh-police-to-impound-vehicles-without-licences-starting-jan
-{'author': 'News Desk',
- 'category': 'Pakistan',
- 'content': 'Sindh Police have announced that from January 1, 2025, vehicles '
-            'without a licence will be impounded, and strict action will be '
-            'taken against traffic law violators without discrimination, '
-            'Express News reported. A meeting chaired by IG Sindh, Ghulam Nabi '
-            'Memon, was held at the Central Police Office in Karachi on '
-            'Tuesday\xa0to discuss the enforcement and implementation of '
-            'traffic laws. The decision was made to continue the awareness '
-            'campaign on obtaining driving licences and to begin strict '
-            'actions against unlicensed drivers and traffic violators starting '
-            'from January 1, 2025. DIG Traffic reported that the traffic '
-            'police face issues such as encroachments, parking management, law '
-            'violations, and poor traffic infrastructure. He added that an '
-            'awareness campaign, which began on December 20, has set up camps '
-            'at 35 public locations, and more than 2,000 banners have been '
-            'displayed across roads, passenger vehicles, and other places. As '
-            'a result of this campaign, there has been a 25-30% increase in '
-            'the number of people applying for driving licences. At the '
-            'meeting, IG Sindh directed that strict action be taken against '
-            'unlicenced drivers violating traffic rules, and that their '
-            'vehicles should be immediately impounded. He also instructed that '
-            'traffic police avoid general checks on the roads and instead '
-            'focus on observing and stopping drivers violating the rules, '
-            'after which they should greet the citizen and request their '
-            'driving licence. He further stated that licenced drivers '
-            'violating traffic rules would be fined, while vehicles of '
-            'unlicenced drivers would be impounded on the spot. IG Sindh '
-            'emphasised that investigating traffic accidents thoroughly can '
-            'help prevent the obvious causes of such incidents. He directed '
-            'all officers to ensure comprehensive investigations into traffic '
-            'accidents, monitor traffic flow and incidents on a daily basis, '
-            'and hold regular training sessions for traffic personnel.',
- 'date': 'December 31, 2024',
- 'heading': 'Sindh police to impound vehicles without licences starting Jan',
- 'url': 'https://tribune.com.pk/story/2519296/sindh-police-to-impound-vehicles-without-licences-starting-jan'}
-2024-12-31 21:14:30 [tribune_latest] WARNING: Could not parse date: December 31, 2024
-2024-12-31 21:14:30 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519297/aseefa-bhutto-urges-public-to-avoid-aerial-firing-on-new-years-eve
-2024-12-31 21:14:30 [scrapy.core.scraper] WARNING: Dropped: Missing title in https://tribune.com.pk/story/2519297/aseefa-bhutto-urges-public-to-avoid-aerial-firing-on-new-years-eve
-{'author': 'News Desk',
- 'category': 'Pakistan',
- 'content': 'As the country prepares to welcome the new year, First Lady '
-            'Aseefa Bhutto Zardari has urged citizens to avoid the dangerous '
-            'practice of aerial firing, which has often turned New Year '
-            'celebrations into tragedies. Daughter of President Asif Ali '
-            'Zardari, Aseefa launched an awareness campaign on X with the '
-            'hashtags #CelebrateResponsibly and #SayNoToAerialFiring. She '
-            'called for a safer approach to ringing in 2025. "When ushering in '
-            'the New Year, remember to #CelebrateResponsibly," Aseefa wrote, '
-            'emphasising the dangers of celebratory gunfire. "Aerial firing is '
-            "not just reckless — it's deadly. Your stray bullet can end an "
-            'innocent life, turning celebration into senseless tragedies," she '
-            'added. The campaign has gained widespread support, with many '
-            'netizens praising her efforts, resulting in hundreds of likes and '
-            'reposts. Senior Sindh minister Sharjeel Memon also echoed '
-            'Aseefa’s appeal, urging the public to celebrate responsibly. He '
-            'assured that the government was taking strict measures to prevent '
-            'aerial firing and appealed to the public to support the '
-            'administration in ensuring a safe environment. In Karachi, the '
-            'local administration has imposed Section 144, banning arms, '
-            'aerial firing, and the use of fireworks for two days, promising '
-            'stringent actions against violators. In addition, Karachi Police '
-            'have issued a stern warning to citizens about the dangers of '
-            "celebratory firing on New Year's Eve, stating that cases of "
-            'attempted murder will be filed against violators.',
- 'date': 'December 31, 2024',
- 'heading': "Aseefa Bhutto urges public to avoid aerial firing on New Year's "
-            'Eve',
- 'url': 'https://tribune.com.pk/story/2519297/aseefa-bhutto-urges-public-to-avoid-aerial-firing-on-new-years-eve'}
-2024-12-31 21:14:30 [scrapy.core.engine] INFO: Closing spider (finished)
-2024-12-31 21:14:30 [tribune_latest] INFO: Tribune scraping completed. Total articles scraped: 5
-2024-12-31 21:14:30 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: data/tribune_articles_2024-12-31T16-14-15+00-00.json
-2024-12-31 21:14:30 [scrapy.extensions.feedexport] INFO: Stored json feed (0 items) in: articles.json
-2024-12-31 21:14:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 2733,
- 'downloader/request_count': 7,
- 'downloader/request_method_count/GET': 7,
- 'downloader/response_bytes': 134481,
- 'downloader/response_count': 7,
- 'downloader/response_status_count/200': 7,
- 'elapsed_time_seconds': 15.447242,
- 'feedexport/success_count/FileFeedStorage': 2,
+2025-01-02 18:55:55 [scrapy.core.engine] INFO: Spider opened
+2025-01-02 18:55:55 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-02 18:55:55 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+2025-01-02 18:55:58 [dawn_latest] INFO: Starting daily latest news scrape
+2025-01-02 18:55:58 [dawn_latest] INFO: Found 60 articles on latest news page
+2025-01-02 18:55:58 [tribune_latest] INFO: Starting daily Tribune latest news scrape
+2025-01-02 18:55:58 [tribune_latest] INFO: Found 10 articles on Tribune latest news page
+2025-01-02 18:56:01 [dawn_latest] INFO: Scraped article: 10 people injured in New York City shooting incident: police
+2025-01-02 18:56:01 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:01 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519662/sam-thompson-spotted-for-first-time-since-split-from-zara-mcdermott
+2025-01-02 18:56:02 [dawn_latest] INFO: Scraped article: None
+2025-01-02 18:56:02 [scrapy.core.scraper] WARNING: Dropped: Missing heading in https://images.dawn.com/news/1193110/5-celebrity-outfits-to-inspire-you-this-wedding-season
+{'author': None,
+ 'category': None,
+ 'content': None,
+ 'date': None,
+ 'heading': None,
+ 'url': 'https://images.dawn.com/news/1193110/5-celebrity-outfits-to-inspire-you-this-wedding-season'}
+2025-01-02 18:56:05 [dawn_latest] INFO: Scraped article: Turkish group bids below minimum fee for Islamabad Airport operations
+2025-01-02 18:56:05 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:05 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519657/pti-presents-two-key-demands-as-second-round-of-talks-with-govt-begins
+2025-01-02 18:56:05 [dawn_latest] INFO: Scraped article: None
+2025-01-02 18:56:05 [scrapy.core.scraper] WARNING: Dropped: Missing heading in https://images.dawn.com/news/1193108/from-kabhi-main-kabhi-tum-to-ishq-murshid-the-best-dramas-of-2024
+{'author': None,
+ 'category': None,
+ 'content': None,
+ 'date': None,
+ 'heading': None,
+ 'url': 'https://images.dawn.com/news/1193108/from-kabhi-main-kabhi-tum-to-ishq-murshid-the-best-dramas-of-2024'}
+2025-01-02 18:56:07 [dawn_latest] INFO: Scraped article: Efforts underway to make nuclear Pakistan an economic power: Dar
+2025-01-02 18:56:07 [dawn_latest] INFO: Scraped article: None
+2025-01-02 18:56:07 [scrapy.core.scraper] WARNING: Dropped: Missing heading in https://images.dawn.com/news/1193109/nca-degree-show-unleashes-celebration-of-artistic-excellence
+{'author': None,
+ 'category': None,
+ 'content': None,
+ 'date': None,
+ 'heading': None,
+ 'url': 'https://images.dawn.com/news/1193109/nca-degree-show-unleashes-celebration-of-artistic-excellence'}
+2025-01-02 18:56:09 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:09 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519660/rohit-sharma-dropped-from-indias-playing-xi-for-sydney-test
+2025-01-02 18:56:09 [dawn_latest] INFO: Scraped article: 2nd round of PTI-govt talks to cool political temperatures ends with 3rd set for next week
+2025-01-02 18:56:09 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:09 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519658/marvin-gaye-iii-faces-assault-and-battery-allegations-in-new-lawsuit
+2025-01-02 18:56:11 [dawn_latest] INFO: Scraped article: Tesla Cybertruck explodes outside Trump Las Vegas hotel, killing driver
+2025-01-02 18:56:11 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:11 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519661/pm-shehbaz-links-economic-growth-to-political-stability
+2025-01-02 18:56:13 [dawn_latest] INFO: Scraped article: 27 migrants die off Tunisia, 83 rescued, in shipwrecks: civil defence
+2025-01-02 18:56:15 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:15 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519653/punjab-plans-e-taxi-service-on-chinese-pattern
+2025-01-02 18:56:15 [dawn_latest] INFO: Scraped article: Shares at PSX gain 100 points amid mixed economic indicators
+2025-01-02 18:56:18 [dawn_latest] INFO: Scraped article: May 9 riots: Mercy petitions of 19 convicts accepted on humanitarian grounds
+2025-01-02 18:56:19 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:19 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519655/justin-baldoni-claims-blake-lively-attempted-to-ban-him-from-it-ends-with-us-premiere
+2025-01-02 18:56:20 [dawn_latest] INFO: Scraped article: 15 killed, 30 injured as US army veteran flying ISIS flag rams into New Orleans crowd
+2025-01-02 18:56:21 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:21 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519651/james-haven-marries-romi-imbelli-amid-wedding-drama-and-angelina-jolies-absence
+2025-01-02 18:56:21 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:21 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519656/napa-celebrates-the-joy-of-urdu-launch-of-three-tales-from-gulistan-e-saadi
+2025-01-02 18:56:22 [dawn_latest] INFO: Scraped article: South Korea police raid Jeju Air, airport over fatal crash
+2025-01-02 18:56:24 [tribune_latest] WARNING: Could not parse date: January 02, 2025
+2025-01-02 18:56:24 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2519652/rapper-getitdmac-aka-dmac-believed-to-have-passed-away-on-new-years-day
+2025-01-02 18:56:24 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-01-02 18:56:24 [tribune_latest] INFO: Tribune scraping completed. Total articles scraped: 10
+2025-01-02 18:56:24 [scrapy.extensions.feedexport] INFO: Stored json feed (10 items) in: data/tribune_articles_2025-01-02T13-55-55+00-00.json
+2025-01-02 18:56:24 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4771,
+ 'downloader/request_count': 12,
+ 'downloader/request_method_count/GET': 12,
+ 'downloader/response_bytes': 257265,
+ 'downloader/response_count': 12,
+ 'downloader/response_status_count/200': 12,
+ 'elapsed_time_seconds': 29.251636,
+ 'feedexport/success_count/FileFeedStorage': 1,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2024, 12, 31, 16, 14, 30, 936642, tzinfo=datetime.timezone.utc),
- 'httpcompression/response_bytes': 771248,
- 'httpcompression/response_count': 7,
- 'item_dropped_count': 5,
- 'item_dropped_reasons_count/DropItem': 5,
- 'log_count/INFO': 20,
- 'log_count/WARNING': 11,
+ 'finish_time': datetime.datetime(2025, 1, 2, 13, 56, 24, 536501, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 1442699,
+ 'httpcompression/response_count': 12,
+ 'item_scraped_count': 10,
+ 'log_count/INFO': 39,
+ 'log_count/WARNING': 13,
  'request_depth_max': 1,
- 'response_received_count': 7,
+ 'response_received_count': 12,
  'robotstxt/request_count': 1,
  'robotstxt/response_count': 1,
  'robotstxt/response_status_count/200': 1,
- 'scheduler/dequeued': 6,
- 'scheduler/dequeued/memory': 6,
- 'scheduler/enqueued': 6,
- 'scheduler/enqueued/memory': 6,
- 'start_time': datetime.datetime(2024, 12, 31, 16, 14, 15, 489400, tzinfo=datetime.timezone.utc)}
-2024-12-31 21:14:30 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'scheduler/dequeued': 11,
+ 'scheduler/dequeued/memory': 11,
+ 'scheduler/enqueued': 11,
+ 'scheduler/enqueued/memory': 11,
+ 'start_time': datetime.datetime(2025, 1, 2, 13, 55, 55, 284865, tzinfo=datetime.timezone.utc)}
+2025-01-02 18:56:24 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-01-02 18:56:25 [dawn_latest] INFO: Scraped article: Ex-serviceman, aide jailed for life in kidnapping for ransom case
+2025-01-02 18:56:27 [dawn_latest] INFO: Scraped article: Analysis: Can Pakistan stem the tide of terror resurgence?
+2025-01-02 18:56:29 [dawn_latest] INFO: Scraped article: Balochistan Assembly ‘lacks genuine representation’
+2025-01-02 18:56:32 [dawn_latest] INFO: Scraped article: Punjab government urged to raise minimum age for girls’ marriage
+2025-01-02 18:56:35 [dawn_latest] INFO: Scraped article: Shafqat appointed new FO spokesperson
+2025-01-02 18:56:37 [dawn_latest] INFO: Scraped article: IHC unhappy over delay in DG’s appointment
+2025-01-02 18:56:39 [dawn_latest] INFO: Scraped article: SC regrets ‘fraudulent’ increase in losing candidate’s votes
+2025-01-02 18:56:42 [dawn_latest] INFO: Scraped article: Islamabad, New Delhi exchange lists of prisoners, N-installations
+2025-01-02 18:56:44 [dawn_latest] INFO: Scraped article: Land dispute claims two lives in Gilgit
+2025-01-02 18:56:50 [dawn_latest] INFO: Scraped article: Three killed in Sohbatpur tribal clash
+2025-01-02 18:56:53 [dawn_latest] INFO: Scraped article: Security official martyred in North Waziristan blast
+2025-01-02 18:56:53 [dawn_latest] INFO: Scraped article: Man hurt in IED attack on OGDCL vehicle in Qila Saifullah
+2025-01-02 18:56:54 [dawn_latest] INFO: Scraped article: Kazakhstan end Germany’s title defence, US in United Cup semis
+2025-01-02 18:56:55 [scrapy.extensions.logstats] INFO: Crawled 29 pages (at 29 pages/min), scraped 23 items (at 23 items/min)
+2025-01-02 18:56:56 [dawn_latest] INFO: Scraped article: Pakistan’s morale high despite heartbreak in Centurion Test, says Salman
+2025-01-02 18:56:58 [dawn_latest] INFO: Scraped article: Sialkot, Peshawar set to vie for Quaid-e-Azam Trophy honours
+2025-01-02 18:57:01 [dawn_latest] INFO: Scraped article: Rashford slams ‘ridiculous’ claim over potential United exit
+2025-01-02 18:57:04 [dawn_latest] INFO: Scraped article: Industry offers divergent views on economic performance in 2024
+2025-01-02 18:57:06 [dawn_latest] INFO: Scraped article: Exports post modest rise of 0.67pc in December
+2025-01-02 18:57:09 [dawn_latest] INFO: Scraped article: European era of Russian gas ends
+2025-01-02 18:57:12 [dawn_latest] INFO: Scraped article: Concerns raised over gas sale deal without bidding
+2025-01-02 18:57:14 [dawn_latest] INFO: Scraped article: Oil sales dip 19pc
+2025-01-02 18:57:16 [dawn_latest] INFO: Scraped article: MWM wraps up Karachi sit-ins after Parachinar peace deal signed
+2025-01-02 18:57:19 [dawn_latest] INFO: Scraped article: Sindh CM Murad orders crackdown on vehicles with fancy number plates
+2025-01-02 18:57:22 [dawn_latest] INFO: Scraped article: CDA plans to spend Rs490 million to make Islamabad’s Red Zone beautiful
+2025-01-02 18:57:25 [dawn_latest] INFO: Scraped article: Only half of Pakistan’s population has access to universal healthcare: report
+2025-01-02 18:57:27 [dawn_latest] INFO: Scraped article: Senate body seeks details of individuals on Fourth Schedule
+2025-01-02 18:57:30 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.dawn.com/news/1882510/national-assembly-committee-summons-islamabad-igp-deputy-for-detailed-briefing-on-nov-26-events>: HTTP status code is not handled or not allowed
+2025-01-02 18:57:32 [dawn_latest] INFO: Scraped article: IHC grants bail to accused in multi-billion rupee fraud
+2025-01-02 18:57:34 [dawn_latest] INFO: Scraped article: Several injured as Peshawar police tear gas, baton-charge protesting local government members
+2025-01-02 18:57:37 [dawn_latest] INFO: Scraped article: Peshawar’s Islamia College varsity student found dead in his hostel room
+2025-01-02 18:57:39 [dawn_latest] INFO: Scraped article: Proposed legislation to allow retrieval of organs from donors dying at KP hospitals
+2025-01-02 18:57:42 [dawn_latest] INFO: Scraped article: 20pc increase in medical emergencies across Punjab
+2025-01-02 18:57:45 [dawn_latest] INFO: Scraped article: Multan crime rate goes down in 2024
+2025-01-02 18:57:48 [dawn_latest] INFO: Scraped article: Punjab government to enact law on senior citizens welfare
+2025-01-02 18:57:50 [dawn_latest] INFO: Scraped article: Biden tries to Trump-proof agenda, bolster legacy in final days
+2025-01-02 18:57:53 [dawn_latest] INFO: Scraped article: Israeli strikes kill 17 on New Year’s Day
+2025-01-02 18:57:55 [dawn_latest] INFO: Scraped article: BLA among main perpetrators of terror in 2024
+2025-01-02 18:57:55 [scrapy.extensions.logstats] INFO: Crawled 53 pages (at 24 pages/min), scraped 46 items (at 23 items/min)
+2025-01-02 18:57:57 [dawn_latest] INFO: Scraped article: FIA finds black sheep in its own ranks
+2025-01-02 18:57:59 [dawn_latest] INFO: Scraped article: Children above 10 will require new ‘biometric’ Form B
+2025-01-02 18:58:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.dawn.com/news/1882579/govt-launches-operations-for-7th-digital-agricultural-census>: HTTP status code is not handled or not allowed
+2025-01-02 18:58:03 [dawn_latest] INFO: Scraped article: Govt notifies pension reforms to cut expenses
+2025-01-02 18:58:06 [dawn_latest] INFO: Scraped article: Iran to hold N-talks with three European countries on 13th
+2025-01-02 18:58:08 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.dawn.com/news/1882584/saudi-arabia-executes-six-iranians-for-drug-trafficking>: HTTP status code is not handled or not allowed
+2025-01-02 18:58:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.dawn.com/news/1882587/number-of-migrants-using-channel-to-uk-rose-by-25pc-in-2024>: HTTP status code is not handled or not allowed
+2025-01-02 18:58:12 [dawn_latest] INFO: Scraped article: Putin orders developing of AI cooperation with Beijing
+2025-01-02 18:58:15 [dawn_latest] INFO: Scraped article: US top judge warns against threats to judicial independence
+2025-01-02 18:58:17 [dawn_latest] INFO: Scraped article: Killing women
+2025-01-02 18:58:17 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-01-02 18:58:17 [dawn_latest] INFO: Scraping completed. Total articles scraped: 56
+2025-01-02 18:58:17 [scrapy.extensions.feedexport] INFO: Stored json feed (53 items) in: data/dawn_articles_2025-01-02T13-55-55+00-00.json
+2025-01-02 18:58:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 25195,
+ 'downloader/request_count': 63,
+ 'downloader/request_method_count/GET': 63,
+ 'downloader/response_bytes': 1412640,
+ 'downloader/response_count': 63,
+ 'downloader/response_status_count/200': 58,
+ 'downloader/response_status_count/403': 4,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 142.512651,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 1, 2, 13, 58, 17, 683854, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 8755039,
+ 'httpcompression/response_count': 63,
+ 'httperror/response_ignored_count': 4,
+ 'httperror/response_ignored_status_count/403': 4,
+ 'item_dropped_count': 3,
+ 'item_dropped_reasons_count/DropItem': 3,
+ 'item_scraped_count': 53,
+ 'log_count/INFO': 103,
+ 'log_count/WARNING': 14,
+ 'request_depth_max': 1,
+ 'response_received_count': 63,
+ 'robotstxt/request_count': 2,
+ 'robotstxt/response_count': 2,
+ 'robotstxt/response_status_count/200': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 61,
+ 'scheduler/dequeued/memory': 61,
+ 'scheduler/enqueued': 61,
+ 'scheduler/enqueued/memory': 61,
+ 'start_time': datetime.datetime(2025, 1, 2, 13, 55, 55, 171203, tzinfo=datetime.timezone.utc)}
+2025-01-02 18:58:17 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-01-02 18:58:18 [prefect.task_runs] INFO: Scrapers completed successfully
+2025-01-02 18:58:19 [prefect.task_runs] INFO: Finished in state Completed()
+2025-01-02 18:58:21 [prefect.task_runs] INFO: Loading JSON files from ./data/articles
+2025-01-02 18:58:21 [prefect.task_runs] INFO: Loaded 63 articles
+2025-01-02 18:58:21 [prefect.task_runs] INFO: Finished in state Completed()
+2025-01-02 18:58:21 [httpx] INFO: HTTP Request: GET http://127.0.0.1:8970/api/csrf-token?client=f4ec7446-8c7f-4860-8cf8-f966a1344915 "HTTP/1.1 422 Unprocessable Entity"
+2025-01-02 18:58:21 [httpx] INFO: HTTP Request: POST http://127.0.0.1:8970/api/logs/ "HTTP/1.1 201 Created"
+2025-01-02 18:58:23 [prefect.task_runs] INFO: Upserting 63 articles
+2025-01-02 18:58:23 [prefect.task_runs] INFO: Successfully upserted 63 articles
+2025-01-02 18:58:23 [prefect.task_runs] INFO: Finished in state Completed()
+2025-01-02 18:58:24 [httpx] INFO: HTTP Request: POST http://127.0.0.1:8970/api/logs/ "HTTP/1.1 201 Created"
+2025-01-02 18:58:25 [prefect.task_runs] INFO: Cleaning up JSON files
+2025-01-02 18:58:25 [prefect.task_runs] INFO: Cleanup completed
+2025-01-02 18:58:25 [prefect.task_runs] INFO: Finished in state Completed()
+2025-01-02 18:58:25 [prefect.flow_runs] INFO: Pipeline completed successfully! Processed 63 articles
+2025-01-02 18:58:25 [httpx] INFO: HTTP Request: POST http://127.0.0.1:8970/api/flow_runs/ee742451-ddae-4e61-abfb-52e018d2e4b8/set_state "HTTP/1.1 201 Created"
+2025-01-02 18:58:25 [prefect.flow_runs] INFO: Finished in state Completed()
+2025-01-02 18:58:25 [httpx] INFO: HTTP Request: POST http://127.0.0.1:8970/api/logs/ "HTTP/1.1 201 Created"
+2025-01-02 18:58:25 [prefect] INFO: Stopping temporary server on http://127.0.0.1:8970

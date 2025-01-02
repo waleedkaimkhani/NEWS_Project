@@ -14,8 +14,6 @@ NEWSPIDER_MODULE = "news_scrapper.spiders"
 
 ITEM_PIPELINES = {
     'news_scrapper.pipelines.NewsValidationPipeline': 200,
-    'news_scrapper.pipelines.DuplicateCheckPipeline': 200,
-    'news_scrapper.pipelines.SQLitePipeline': 300,
     'news_scrapper.pipelines.JsonExportPipeline': 400,
 }
 
