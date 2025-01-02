@@ -1,0 +1,53 @@
+2025-01-02 10:23:01,182 - dawn_latest - INFO - Starting daily latest news scrape
+2025-01-02 10:23:01,228 - dawn_latest - INFO - Found 60 articles on latest news page
+2025-01-02 10:23:03,933 - dawn_latest - INFO - Scraped article: Ex-serviceman, aide jailed for life in kidnapping for ransom case
+2025-01-02 10:23:06,709 - dawn_latest - INFO - Scraped article: Trying too hard
+2025-01-02 10:23:08,533 - dawn_latest - INFO - Scraped article: Putin orders developing of AI cooperation with Beijing
+2025-01-02 10:23:10,803 - dawn_latest - INFO - Scraped article: South Korea to send Jeju Air crash black box to US
+2025-01-02 10:23:13,545 - dawn_latest - INFO - Scraped article: Killing women
+2025-01-02 10:23:15,800 - dawn_latest - INFO - Scraped article: Children above 10 will require new ‘biometric’ Form B
+2025-01-02 10:23:18,323 - dawn_latest - INFO - Scraped article: Govt launches operations for 7th digital agricultural census
+2025-01-02 10:23:21,061 - dawn_latest - INFO - Scraped article: Govt notifies pension reforms to cut expenses
+2025-01-02 10:23:23,236 - dawn_latest - INFO - Scraped article: Iran to hold N-talks with three European countries on 13th
+2025-01-02 10:23:26,057 - dawn_latest - INFO - Scraped article: Saudi Arabia executes six Iranians for drug trafficking
+2025-01-02 10:23:27,443 - dawn_latest - INFO - Scraped article: Number of migrants using Channel to UK rose by 25pc in 2024
+2025-01-02 10:23:30,368 - dawn_latest - INFO - Scraped article: Economic plan
+2025-01-02 10:23:32,992 - dawn_latest - INFO - Scraped article: MWM wraps up Karachi sit-ins after Parachinar peace deal signed
+2025-01-02 10:23:35,049 - dawn_latest - INFO - Scraped article: Sindh CM Murad orders crackdown on vehicles with fancy number plates
+2025-01-02 10:23:37,955 - dawn_latest - INFO - Scraped article: Biden tries to Trump-proof agenda, bolster legacy in final days
+2025-01-02 10:23:39,672 - dawn_latest - INFO - Scraped article: FIA finds black sheep in its own ranks
+2025-01-02 10:23:42,006 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882329/police-action-to-clear-karachi-roads-of-protesters-sparks-violence: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:43,928 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882327/karachis-water-crisis-to-ease-with-hub-canal-kb-feeder-projects-cm-sindh: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:46,803 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882352/three-of-a-chiniot-family-drown-as-car-plunges-into-nullah: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:47,050 - dawn_latest - ERROR - Error parsing article https://images.dawn.com/news/1193105/justin-baldoni-sues-the-new-york-times-over-blake-lively-story: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:49,518 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882349/fia-nabs-red-book-trafficker-linked-to-libya-boat-tragedy: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:52,484 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882348/fog-related-disruptions-persist-across-punjab-rain-likely-in-most-districts-from-tomorrow: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:54,916 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882332/drug-addict-burnt-alive-in-faisalabad: UNIQUE constraint failed: articles.url
+2025-01-02 10:23:57,578 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882290/rain-heavy-snowfall-expected-in-first-week-of-january-in-western-upper-areas: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:00,151 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882289/interior-ministry-wants-na-body-briefed-on-illegal-allotment-of-plots-in-islamabads-npf: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:02,705 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882285/over-1300-rawalpindi-police-officials-faced-punishments-in-2024: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:04,561 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882283/na-body-displeased-over-absence-of-power-companies-heads: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:09,828 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882299/funds-for-two-major-balakot-roads-okayed: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:12,345 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882297/battagram-swat-residents-hit-hard-by-long-power-cuts: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:14,908 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882388/chelseas-title-hopes-rocked-united-end-miserable-month-with-loss-at-home: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:17,758 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882386/djokovic-and-sabalenka-win-perricard-aces-kyrgios-test: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:20,575 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882384/psb-instructs-provincial-sports-boards-to-scrutinise-clubs: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:23,259 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882028/welcoming-2025-in-pakistan-the-satire-edition: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:25,182 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882419/bulls-celebrate-new-year-with-all-time-high-rally: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:31,756 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882423/in-pictures-revellers-bid-adieu-to-2024-welcome-2025-with-fireworks: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:34,351 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882434/south-korea-says-will-send-jeju-air-crash-black-box-to-us: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:37,286 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882435/26-injured-in-celebratory-aerial-firing-on-new-years-eve-in-karachi: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:39,234 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882255/five-for-2025-the-key-challenges-pakistan-must-tackle-head-on-in-the-new-year: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:41,080 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882439/cpi-inflation-clocks-in-at-41pc-for-december-2024-lowest-in-nearly-7-years: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:43,954 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882454/pakistans-polio-problem: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:48,901 - dawn_latest - INFO - Scraped article: Driver kills 10 ramming truck into New Orleans crowd in New Year attack
+2025-01-02 10:24:50,882 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882460/peace-brokered-in-kurram-as-warring-sides-sign-agreement-kp-govt-spokesperson: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:53,759 - dawn_latest - ERROR - Error parsing article https://www.dawn.com/news/1882451/india-carrying-out-covert-assassination-campaigns-in-pakistan-report: UNIQUE constraint failed: articles.url
+2025-01-02 10:24:56,914 - dawn_latest - INFO - Scraped article: Russian gas era in Europe ends as Ukraine stops transit
+2025-01-02 10:24:58,514 - dawn_latest - INFO - Scraped article: Internet blocking is ‘legal grey area’, Senate body told
+2025-01-02 10:25:01,144 - dawn_latest - INFO - Scraped article: Shehbaz likely to induct new faces in cabinet
+2025-01-02 10:25:04,038 - dawn_latest - INFO - Scraped article: Balochistan Assembly ‘lacks genuine representation’
+2025-01-02 10:25:07,070 - dawn_latest - INFO - Scraped article: Industry offers divergent views on economic performance in 2024
+2025-01-02 10:25:13,283 - dawn_latest - INFO - Scraped article: Concerns raised over gas sale deal without bidding
+2025-01-02 10:25:15,195 - dawn_latest - INFO - Scraped article: Oil sales dip 19pc
+2025-01-02 10:25:15,377 - dawn_latest - INFO - Scraping completed. Total articles scraped: 24

@@ -14,4 +14,5 @@ class NewsArticleItem(Item):
     url = Field()
     source = Field()  # To identify which news site
     spider_name = Field()
+    processed_at = Field()
     scrape_date = Field()

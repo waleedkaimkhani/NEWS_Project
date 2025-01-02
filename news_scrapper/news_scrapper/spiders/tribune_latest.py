@@ -41,6 +41,7 @@ class TribuneLatestSpider(Spider):
         return self._logger
 
     def setup_logging(self):
+
         os.makedirs('logs', exist_ok=True)
         configure_logging()
         logger = logging.getLogger(self.name)
@@ -84,6 +85,7 @@ class TribuneLatestSpider(Spider):
         return result is not None
 
     def parse(self, response):
+        
         self.logger.info("Starting daily Tribune latest news scrape")
         
         # Tribune's latest news structure
@@ -115,7 +117,7 @@ class TribuneLatestSpider(Spider):
             category = response.xpath('/html/body/div[1]/div[3]/div/div/ul/li[2]/text()').get()
             
             # Clean data
-            print (heading,content,author,date_str,category)
+            
             heading = heading.strip() if heading else None
             content = content.strip() if content else None
             author = author.strip() if author else None

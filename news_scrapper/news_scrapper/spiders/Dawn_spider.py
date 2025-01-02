@@ -87,6 +87,7 @@ class DawnLatestSpider(Spider):
         conn.close()
 
     def is_article_scraped(self, url):
+        
         """Check if article URL has been scraped today"""
         conn = sqlite3.connect(self.db_path)
         c = conn.cursor()
@@ -99,6 +100,7 @@ class DawnLatestSpider(Spider):
         return result is not None
 
     def parse(self, response):
+
         self.logger.info("Starting daily latest news scrape")
         articles = response.xpath('/html/body/div[2]/div/div/div[1]/div/div/div/div[1]/article')
        
@@ -115,9 +117,9 @@ class DawnLatestSpider(Spider):
                 self.stats['articles_found'] += 1
 
     def parse_article(self, response):
+        
         try:
             # Extract article details
-          
           
             heading = response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/h2/a/text()').get()
             
@@ -125,21 +127,22 @@ class DawnLatestSpider(Spider):
             
             author = '|'.join(response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/div[1]/span[1]/a/text()').getall())
             
-            date_str = response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/div[1]/span[2]/span[1]/span[2]/text()').get()
+            date_str = response.xpath('/html/body/div[2]/div[1]/div/article/div[2]/div[1]/span[3]/span[1]/span[2]/text()').get()
             
-            category = response.xpath('/html/body/div[2]/div[1]/div/article/div[4]/div[1]/div[2]/div[1]/div/div/div/span/a/span/text()').get()
-           
+            category = response.xpath('/html/body/div[2]/div[1]/div/article/div[4]/div[1]/div[3]/div[1]/div/div/div/span/a/@title').get()
+          
+    
             # Clean and process the data
             heading = heading.strip() if heading else None
             content = content.strip() if content else None
             author = author.strip() if author else None
             category = category.strip() if category else None
             
-            # Parse date
+           
             publish_date = None
             if date_str:
                 try:
-                    publish_date = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+                    publish_date = datetime.strptime(date_str, "%B %d, %Y")
                 except ValueError:
                     self.logger.warning(f"Could not parse date: {date_str}")
 
