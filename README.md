@@ -93,21 +93,25 @@ The project uses Prefect for workflow automation:
 ## Project Structure
 
 ```
+# Project Structure: NEWS_Project
+
+```plaintext
 NEWS_Project/
-|├── news_scrapper/
-|   |├── spiders/             # Spiders for scraping websites
-|   |├── items.py            # Defines data models for scraped items
-|   |├── pipelines.py        # Data processing pipelines
-|   |├── settings.py         # Scrapy project settings
-|   |├── middlewares.py      # Middleware for custom behaviors
-|   |├── parallel_scrape.py  # Script to run spiders in parallel
-|├── logs/                   # Directory for log files
-|├── data/                   # Directory where json are stored
-|├── stats/                  # Directory where stats for e.g no of articles scrapped
-|├── news_pipeline.py        # prefect pipeline which run scrapper and then stores data in postgress db
-|├── deployment.py           # prefect flow scheduling script 
-|├── requirements.txt        # Python dependencies
-|├── scrapy.cfg              # Scrapy configuration file
+├── news_scrapper/               # Main module for web scraping
+│   ├── spiders/                 # Spiders for scraping websites
+│   ├── items.py                 # Defines data models for scraped items
+│   ├── pipelines.py             # Data processing pipelines
+│   ├── settings.py              # Scrapy project settings
+│   ├── middlewares.py           # Middleware for custom behaviors
+│   ├── parallel_scrape.py       # Script to run spiders in parallel
+├── logs/                        # Directory for log files
+├── data/                        # Directory where JSON files are stored
+├── stats/                       # Directory for stats (e.g., number of articles scraped)
+├── news_pipeline.py             # Prefect pipeline script to run scrapers and store data in PostgreSQL
+├── deployment.py                # Prefect flow scheduling script
+├── requirements.txt             # Python dependencies
+├── scrapy.cfg                   # Scrapy configuration file
+
 ```
 
 
