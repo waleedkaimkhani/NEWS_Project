@@ -9,63 +9,22 @@ import json
 from collections import defaultdict
 import os
 from news_scrapper.items import NewsArticleItem
+from news_scrapper.spiders.base_spider import NewsSpiderBase, SpiderConfig
 
-class TribuneLatestSpider(Spider):
+class TribuneLatestSpider(NewsSpiderBase):
+
     name = 'tribune_latest'
-    allowed_domains = ['tribune.com.pk']
-    start_urls = ['https://tribune.com.pk/latest']
     
-    custom_settings = {
-        'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'ROBOTSTXT_OBEY': True,
-        'CONCURRENT_REQUESTS': 16,
-        'DOWNLOAD_DELAY': 2,
-        'LOG_LEVEL': 'INFO',
-        'LOG_FILE': 'tribune_latest.log',
-        'FEED_FORMAT': 'json',
-        'FEED_URI': 'data/tribune_articles_%(time)s.json'
-    }
-
     def __init__(self, *args, **kwargs):
+        
         super(TribuneLatestSpider, self).__init__(*args, **kwargs)
-        self.redis_client = redis.Redis(host='localhost', port=6379, db=0)
-        self.url_expiry = 86400 
-        self.today = datetime.now().date()
-        self.stats = defaultdict(int)
-        self._logger = None
-
-    @property
-    def logger(self):
-        if self._logger is None:
-            self._logger = logging.getLogger(self.name)
-        return self._logger
-
-    def setup_logging(self):
-
-        os.makedirs('logs', exist_ok=True)
-        configure_logging()
-        logger = logging.getLogger(self.name)
-        
-        log_file = f'logs/tribune_scraper_{self.today}.log'
-        fh = logging.FileHandler(log_file)
-        fh.setLevel(logging.DEBUG)
-        
-        formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        config = SpiderConfig(
+            name='tribune_latest',
+            allowed_domains=['tribune.com.pk'],
+            start_urls=['https://tribune.com.pk/latest']
         )
-        fh.setFormatter(formatter)
-        
-        logger.handlers = []
-        logger.addHandler(fh)
-        logger.setLevel(logging.DEBUG)
+        self.initialize(config)
 
-    def is_article_scraped(self, url):
-        """Check if article URL exists in Redis"""
-        return bool(self.redis_client.get(f"tribune:url:{url}"))
-
-    def mark_article_scraped(self, url):
-        """Mark URL as scraped in Redis with expiration"""
-        self.redis_client.setex(f"tribune:url:{url}", self.url_expiry, "1")
 
     def parse(self, response):
         
@@ -134,19 +93,4 @@ class TribuneLatestSpider(Spider):
             self.logger.error(f"Error parsing Tribune article {response.url}: {str(e)}")
             self.stats['errors'] += 1
 
-    def closed(self, reason):
-        os.makedirs('stats', exist_ok=True)
-        
-        stats_report = {
-            'date': self.today.isoformat(),
-            'articles_found': self.stats['articles_found'],
-            'articles_scraped': self.stats['articles_scraped'],
-            'errors': self.stats['errors'],
-            'reason': reason
-        }
-        
-        stats_file = f'stats/tribune_stats_{self.today}.json'
-        with open(stats_file, 'w') as f:
-            json.dump(stats_report, f, indent=4)
-        
-        self.logger.info(f"Tribune scraping completed. Total articles scraped: {self.stats['articles_scraped']}")
+    

@@ -9,77 +9,22 @@ import json
 from collections import defaultdict
 import os
 from news_scrapper.items import NewsArticleItem
+from news_scrapper.spiders.base_spider import NewsSpiderBase, SpiderConfig
 
-class DawnLatestSpider(Spider):
+class DawnLatestSpider(NewsSpiderBase):
     name = 'dawn_latest'
-    allowed_domains = ['dawn.com']
-    start_urls = ['https://www.dawn.com/latest-news']
     
-    custom_settings = {
-        'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'ROBOTSTXT_OBEY': True,
-        'CONCURRENT_REQUESTS': 16,
-        'DOWNLOAD_DELAY': 2,
-        'LOG_LEVEL': 'INFO',
-        'LOG_FILE': 'dawn_latest.log',
-        # Export settings
-        'FEED_FORMAT': 'json',
-        'FEED_URI': 'data/dawn_articles_%(time)s.json'
-    }
-
     def __init__(self, *args, **kwargs):
         super(DawnLatestSpider, self).__init__(*args, **kwargs)
         
-        self.redis_client = redis.Redis(host='localhost', port=6379, db=0)
-        self.url_expiry = 86400 
-        self.today = datetime.now().date()
-        
-        # Initialize statistics
-        self.stats = defaultdict(int)
-        
-        # Set up logging
-        self.setup_logging()
-        # Create a class attribute for logger
-        self._logger = None
-
-    @property
-    def logger(self):
-        if self._logger is None:
-            self._logger = logging.getLogger(self.name)
-        return self._logger
-
-    def setup_logging(self):
-        """Set up logging configuration"""
-        # Ensure logs directory exists
-        os.makedirs('logs', exist_ok=True)
-        
-        # Configure logging
-        configure_logging()
-        logger = logging.getLogger(self.name)
-        
-        # Create file handler with date in filename
-        log_file = f'logs/dawn_scraper_{self.today}.log'
-        fh = logging.FileHandler(log_file)
-        fh.setLevel(logging.DEBUG)
-        
-        formatter = logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        super(DawnLatestSpider, self).__init__(*args, **kwargs)
+        config = SpiderConfig(
+            name='dawn_latest',
+            allowed_domains=['dawn.com'],
+            start_urls=['https://www.dawn.com/latest-news']
         )
-        fh.setFormatter(formatter)
-        
-        # Remove existing handlers to avoid duplicates
-        logger.handlers = []
-        logger.addHandler(fh)
-        logger.setLevel(logging.DEBUG)
-
-    def is_article_scraped(self, url):
-        """Check if article URL exists in Redis"""
-        return bool(self.redis_client.get(f"dawn:url:{url}"))
-
-    def mark_article_scraped(self, url):
-        """Mark URL as scraped in Redis with expiration"""
-        self.redis_client.setex(f"dawn:url:{url}", self.url_expiry, "1")
-
+        self.initialize(config)
+       
     def parse(self, response):
 
         self.logger.info("Starting daily latest news scrape")
@@ -146,22 +91,4 @@ class DawnLatestSpider(Spider):
             self.logger.error(f"Error parsing article {response.url}: {str(e)}")
             self.stats['errors'] += 1
 
-    def closed(self, reason):
-        """Log final statistics when spider closes"""
-        # Ensure stats directory exists
-        os.makedirs('stats', exist_ok=True)
-        
-        stats_report = {
-            'date': self.today.isoformat(),
-            'articles_found': self.stats['articles_found'],
-            'articles_scraped': self.stats['articles_scraped'],
-            'errors': self.stats['errors'],
-            'reason': reason
-        }
-        
-        # Save daily statistics
-        stats_file = f'stats/dawn_stats_{self.today}.json'
-        with open(stats_file, 'w') as f:
-            json.dump(stats_report, f, indent=4)
-        
-        self.logger.info(f"Scraping completed. Total articles scraped: {self.stats['articles_scraped']}")
+    

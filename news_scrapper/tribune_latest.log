@@ -237,3 +237,68 @@
 2025-01-02 18:58:25 [prefect.flow_runs] INFO: Finished in state Completed()
 2025-01-02 18:58:25 [httpx] INFO: HTTP Request: POST http://127.0.0.1:8970/api/logs/ "HTTP/1.1 201 Created"
 2025-01-02 18:58:25 [prefect] INFO: Stopping temporary server on http://127.0.0.1:8970
+2025-01-05 15:52:51 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-01-05 15:52:51 [py.warnings] WARNING: C:\Users\WALEED\.conda\envs\scrapy\Lib\site-packages\scrapy\utils\request.py:120: ScrapyDeprecationWarning: 'REQUEST_FINGERPRINTER_IMPLEMENTATION' is a deprecated setting.
+It will be removed in a future version of Scrapy.
+  return cls(crawler)
+
+2025-01-05 15:52:51 [scrapy.extensions.telnet] INFO: Telnet Password: 92bbcee16de69627
+2025-01-05 15:52:51 [py.warnings] WARNING: C:\Users\WALEED\.conda\envs\scrapy\Lib\site-packages\scrapy\extensions\feedexport.py:432: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+2025-01-05 15:52:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2025-01-05 15:52:51 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'news_scrapper',
+ 'DOWNLOAD_DELAY': 2,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'tribune_latest.log',
+ 'LOG_LEVEL': 'INFO',
+ 'NEWSPIDER_MODULE': 'news_scrapper.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['news_scrapper.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+2025-01-05 15:52:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-01-05 15:52:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-01-05 15:52:53 [scrapy.middleware] INFO: Enabled item pipelines:
+['news_scrapper.pipelines.NewsValidationPipeline',
+ 'news_scrapper.pipelines.JsonExportPipeline']
+2025-01-05 15:52:53 [scrapy.core.engine] INFO: Spider opened
+2025-01-05 15:52:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-01-05 15:52:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-01-05 15:52:58 [tribune_latest] INFO: Starting daily Tribune latest news scrape
+2025-01-05 15:52:58 [tribune_latest] INFO: Found 50 articles on Tribune latest news page
+2025-01-05 15:53:01 [tribune_latest] WARNING: Could not parse date: January 05, 2025
+2025-01-05 15:53:01 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2520172/sza-plans-two-childrens-music-albums-before-stepping-away-from-music-industry
+2025-01-05 15:53:03 [tribune_latest] WARNING: Could not parse date: January 05, 2025
+2025-01-05 15:53:03 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2520173/lauren-sanchez-stuns-in-pink-cut-out-dress-in-st-barts-hours-after-customs-raid-on-jeff-bezos-yacht
+2025-01-05 15:53:05 [tribune_latest] WARNING: Could not parse date: January 05, 2025
+2025-01-05 15:53:05 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2520175/real-life-donkey-behind-shreks-donkey-dies-at-30-leaving-lasting-legacy-in-film-and-community
+2025-01-05 15:53:08 [tribune_latest] WARNING: Could not parse date: January 05, 2025
+2025-01-05 15:53:08 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2520176/youtuber-corey-pritchett-jr-accused-of-kidnapping-women-in-texas-before-fleeing-to-qatar
+2025-01-05 15:53:10 [tribune_latest] WARNING: Could not parse date: January 05, 2025
+2025-01-05 15:53:10 [tribune_latest] INFO: Scraped Tribune article: https://tribune.com.pk/story/2520178/waiter-arrested-for-supplying-drugs-in-connection-with-liam-paynes-death-in-buenos-aires

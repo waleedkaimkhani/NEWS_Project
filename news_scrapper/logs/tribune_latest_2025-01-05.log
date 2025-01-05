@@ -1,0 +1,108 @@
+2025-01-05 17:07:53,855 - tribune_latest - INFO - Starting daily Tribune latest news scrape
+2025-01-05 17:07:53,877 - tribune_latest - INFO - Found 50 articles on Tribune latest news page
+2025-01-05 17:07:54,554 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:54,554 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520184/joe-jonas-makes-fun-of-jonas-brothers-purity-rings-in-tiktok-video
+2025-01-05 17:07:54,921 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:54,923 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520178/waiter-arrested-for-supplying-drugs-in-connection-with-liam-paynes-death-in-buenos-aires
+2025-01-05 17:07:54,963 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:54,963 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520180/three-killed-in-indian-coast-guard-helicopter-crash-in-gujarat
+2025-01-05 17:07:55,101 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,103 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520171/jennifer-aniston-opens-up-about-health-struggles-hard-time-the-last-10-15-years
+2025-01-05 17:07:55,257 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,257 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520179/aubrey-plazas-golden-globes-appearance-uncertain-after-husband-jeff-baenas-tragic-death
+2025-01-05 17:07:55,330 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,332 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520173/lauren-sanchez-stuns-in-pink-cut-out-dress-in-st-barts-hours-after-customs-raid-on-jeff-bezos-yacht
+2025-01-05 17:07:55,439 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,439 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520172/sza-plans-two-childrens-music-albums-before-stepping-away-from-music-industry
+2025-01-05 17:07:55,480 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,481 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520175/real-life-donkey-behind-shreks-donkey-dies-at-30-leaving-lasting-legacy-in-film-and-community
+2025-01-05 17:07:55,521 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,521 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520176/youtuber-corey-pritchett-jr-accused-of-kidnapping-women-in-texas-before-fleeing-to-qatar
+2025-01-05 17:07:55,578 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,587 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520183/justin-bieber-shares-romantic-kiss-with-hailey-in-selfie-after-she-addresses-marriage-troubles
+2025-01-05 17:07:55,623 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,626 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520166/cybersecurity-firm-tenables-ceo-amit-yoran-dies-after-cancer-battle-at-54
+2025-01-05 17:07:55,671 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,671 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520168/ppp-warns-pml-n-led-govt-of-collapse-if-it-withdraws-support
+2025-01-05 17:07:55,771 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,771 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520174/babar-rizwan-depart-as-south-africa-on-top-against-pakistan-in-final-test
+2025-01-05 17:07:55,829 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,832 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520133/south-korea-political-standoff-intensifies
+2025-01-05 17:07:55,928 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,938 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520167/justin-bieber-unfollows-scooter-braun-on-instagram
+2025-01-05 17:07:55,988 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:55,988 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520134/biden-admin-announces-8b-arms-sale-to-israel
+2025-01-05 17:07:56,070 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,071 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520131/judge-to-sentence-trump-before-inauguration
+2025-01-05 17:07:56,154 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,172 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520136/39-bell-tolls-begin-final-national-sendoff-for-carter
+2025-01-05 17:07:56,224 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,224 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520135/worlds-oldest-person-dies-at-116-in-japan
+2025-01-05 17:07:56,261 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,262 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520137/experts-to-be-hired-for-smes-pm-informed
+2025-01-05 17:07:56,325 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,327 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520138/dcs-convoy-attacked-in-bid-to-sabotage-kurram-peace-deal
+2025-01-05 17:07:56,359 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,361 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520132/syria-says-flights-to-resume-from-damascus
+2025-01-05 17:07:56,422 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,422 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520177/australias-southeast-faces-extreme-fire-risk-amid-heatwave
+2025-01-05 17:07:56,473 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,473 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520139/cold-lays-icy-hands-across-country
+2025-01-05 17:07:56,559 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,561 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520182/indian-nationals-attack-pakistani-restaurant-in-uk
+2025-01-05 17:07:56,605 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,605 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520140/govt-pti-negotiations-still-in-first-gear
+2025-01-05 17:07:56,640 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,642 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520142/australia-beat-india-by-six-wickets-at-scg-to-reach-wtc-final
+2025-01-05 17:07:56,723 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,723 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520143/quetta-gladiators-release-sarfaraz-ahmed-ahead-of-psl-10
+2025-01-05 17:07:56,763 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,770 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520141/blast-in-turbat-leaves-four-dead
+2025-01-05 17:07:56,792 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,794 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520148/washington-post-cartoonist-resigns-after-jeff-bezos-satire-gets-rejected
+2025-01-05 17:07:56,922 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:56,924 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520151/president-pm-reiterate-support-for-kashmiris-right-to-self-determination
+2025-01-05 17:07:57,016 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,021 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520152/bidens-awarding-of-presidential-medal-of-freedom-to-soros-sparks-backlash
+2025-01-05 17:07:57,190 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,190 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520147/aubrey-plaza-seen-at-knicks-game-with-jerrod-carmichael-two-days-before-husband-jeff-baenas-death
+2025-01-05 17:07:57,226 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,227 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520146/russian-north-korean-troops-face-heavy-losses-in-kursk-zelensky
+2025-01-05 17:07:57,256 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,258 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520153/gautam-gambhir-opens-up-on-rohit-kohlis-future-in-test-cricket
+2025-01-05 17:07:57,279 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,281 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520150/lily-allen-heartbroken-after-finding-stranger-things-husband-david-harbour-cheating-on-dating-app
+2025-01-05 17:07:57,357 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,366 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520149/attackers-behind-kurram-dc-shooting-identified
+2025-01-05 17:07:57,469 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,472 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520154/ryan-reynolds-and-blake-lively-will-skip-golden-globes-amid-justin-baldoni-harassment-lawsuit
+2025-01-05 17:07:57,640 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,640 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520157/whatsapp-rolls-out-new-feature-to-manage-chat-message-animations
+2025-01-05 17:07:57,664 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,664 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520155/nadra-centres-to-offer-passport-services-soon
+2025-01-05 17:07:57,692 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,694 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520160/major-dinosaur-footprint-discovery-expands-britains-jurassic-trackways
+2025-01-05 17:07:57,853 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,855 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520163/yuzvendra-chahal-dhanashree-vermas-alleged-separation-sparks-rumors
+2025-01-05 17:07:57,962 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,962 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520164/pcb-to-send-injured-saim-ayub-to-london-for-treatment
+2025-01-05 17:07:57,996 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:57,996 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520161/aubrey-plazas-final-post-with-darling-husband-jeff-baena-reveals-how-proud-she-was-of-him
+2025-01-05 17:07:58,062 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:58,069 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520158/remembering-zulfikar-ali-bhutto-on-his-97th-birth-anniversary
+2025-01-05 17:07:58,091 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:58,093 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520162/actor-emmad-irfani-shares-his-relation-to-allama-iqbal
+2025-01-05 17:07:58,199 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:58,204 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520159/top-5-unforgettable-female-ufc-fights-of-2024
+2025-01-05 17:07:58,259 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:58,262 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520169/surgeon-diagnosed-with-cancer-after-operating-on-patient
+2025-01-05 17:07:58,337 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:58,337 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520170/elon-musk-confirms-starlinks-launch-plans-for-pakistan
+2025-01-05 17:07:58,671 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:07:58,671 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520165/quetta-winds-drop-karachis-temperature
+2025-01-05 17:07:58,708 - tribune_latest - INFO - Scraping completed. Total articles scraped: 50
+2025-01-05 17:14:14,101 - tribune_latest - INFO - Starting daily Tribune latest news scrape
+2025-01-05 17:14:14,121 - tribune_latest - INFO - Found 50 articles on Tribune latest news page
+2025-01-05 17:14:15,831 - tribune_latest - WARNING - Could not parse date: January 05, 2025
+2025-01-05 17:14:15,836 - tribune_latest - INFO - Scraped Tribune article: https://tribune.com.pk/story/2520181/messi-explains-why-he-skipped-meeting-biden-at-medal-ceremony
+2025-01-05 17:14:15,864 - tribune_latest - INFO - Scraping completed. Total articles scraped: 1
