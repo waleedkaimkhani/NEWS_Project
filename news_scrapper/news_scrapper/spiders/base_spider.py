@@ -56,7 +56,7 @@ class NewsSpiderBase(Spider, ABC):
         
         # Initialize Redis
         
-        self.redis_client = redis.Redis(host='localhost', port=6379, db=0)
+        self.redis_client = redis.Redis(host='redis', port=6379, db=0)
         
         self.today = datetime.now().date()
         self.stats = defaultdict(int)

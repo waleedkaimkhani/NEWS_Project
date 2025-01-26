@@ -16,7 +16,7 @@ DB_CONFIG = {
     "dbname": "news_db",
     "user": "admin",
     "password": "admin123",
-    "host": "localhost",
+    "host": "postgres",
     "port": "5432"
 }
 
