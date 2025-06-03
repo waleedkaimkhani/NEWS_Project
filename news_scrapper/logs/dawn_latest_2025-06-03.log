@@ -1,0 +1,122 @@
+2025-06-03 07:05:09,230 - dawn_latest - INFO - Starting daily latest news scrape
+2025-06-03 07:05:09,263 - dawn_latest - INFO - Found 0 articles on latest news page
+2025-06-03 07:05:09,265 - dawn_latest - INFO - Scraping completed. Total articles scraped: 0
+2025-06-03 07:06:38,840 - dawn_latest - INFO - Starting daily latest news scrape
+2025-06-03 07:06:38,864 - dawn_latest - INFO - Found 211 articles on latest news page
+2025-06-03 07:06:38,874 - dawn_latest - INFO - Scraping completed. Total articles scraped: 0
+2025-06-03 07:07:20,501 - dawn_latest - INFO - Starting daily latest news scrape
+2025-06-03 07:07:20,525 - dawn_latest - INFO - Found 211 articles on latest news page
+2025-06-03 07:07:20,842 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:20,916 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:20,965 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,047 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,094 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,175 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,228 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,303 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,314 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,322 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,360 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,374 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,383 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,392 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,400 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,443 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,453 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,461 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,544 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,552 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,560 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,568 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,576 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,677 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,682 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,690 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,721 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,729 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,737 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:21,745 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:22,438 - dawn_latest - INFO - Scraped article: None
+2025-06-03 07:07:23,874 - dawn_latest - INFO - Scraping completed. Total articles scraped: 31
+2025-06-03 07:08:46,207 - dawn_latest - INFO - Starting daily latest news scrape
+2025-06-03 07:08:46,231 - dawn_latest - INFO - Found 211 articles on latest news page
+2025-06-03 07:08:46,541 - dawn_latest - WARNING - Could not parse date: 2025-06-03 11:11:28+05:00
+2025-06-03 07:08:46,541 - dawn_latest - INFO - Scraped article: Murder case filed after 17-year-old social media influencer shot dead in Islamabad
+2025-06-03 07:08:46,661 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:44+05:00
+2025-06-03 07:08:46,661 - dawn_latest - INFO - Scraped article: Indian smuggler caught with venomous vipers
+2025-06-03 07:08:46,791 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:27:01+05:00
+2025-06-03 07:08:46,792 - dawn_latest - INFO - Scraped article: Imad to lead Pakistan in Nations Cup as PHF announces squad
+2025-06-03 07:08:46,931 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:32:07+05:00
+2025-06-03 07:08:46,932 - dawn_latest - INFO - Scraped article: Warming ties
+2025-06-03 07:08:47,032 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:44+05:00
+2025-06-03 07:08:47,032 - dawn_latest - INFO - Scraped article: Bangladesh launches fresh reform bid
+2025-06-03 07:08:47,088 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:35+05:00
+2025-06-03 07:08:47,089 - dawn_latest - INFO - Scraped article: Vacancies hamper Gilgit-Baltistan justice delivery
+2025-06-03 07:08:47,097 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:36+05:00
+2025-06-03 07:08:47,098 - dawn_latest - INFO - Scraped article: Three cops among six injured in grenade attack in Quetta
+2025-06-03 07:08:47,107 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:36+05:00
+2025-06-03 07:08:47,107 - dawn_latest - INFO - Scraped article: Balochistan Assembly grills Qesco over power failures
+2025-06-03 07:08:47,149 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:35+05:00
+2025-06-03 07:08:47,150 - dawn_latest - INFO - Scraped article: ECC approves Rs56bn technical supplementary grants
+2025-06-03 07:08:47,159 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:42:55+05:00
+2025-06-03 07:08:47,159 - dawn_latest - INFO - Scraped article: Within the corridors
+2025-06-03 07:08:47,168 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:36+05:00
+2025-06-03 07:08:47,168 - dawn_latest - INFO - Scraped article: PTI doubles down on rigging allegations in Sialkot by-polls
+2025-06-03 07:08:47,177 - dawn_latest - WARNING - Could not parse date: 2025-06-03 07:26:36+05:00
+2025-06-03 07:08:47,178 - dawn_latest - INFO - Scraped article: Prisoners flee ‘quake-hit’ Malir jail in Karachi
+2025-06-03 07:08:47,202 - dawn_latest - WARNING - Could not parse date: 2025-06-02 19:42:23+05:00
+2025-06-03 07:08:47,203 - dawn_latest - INFO - Scraped article: Pakistan to play matches in Sri Lanka as ICC announces dates, venues for 2025 Women’s World Cup
+2025-06-03 07:08:47,298 - dawn_latest - WARNING - Could not parse date: 2025-05-30 07:11:13+05:00
+2025-06-03 07:08:47,299 - dawn_latest - INFO - Scraped article: Pakistan to face Iraq, Oman and Cambodia for spot at U-23 Asian Cup
+2025-06-03 07:08:47,303 - dawn_latest - WARNING - Could not parse date: 2025-06-02 20:11:23+05:00
+2025-06-03 07:08:47,304 - dawn_latest - INFO - Scraped article: Haj volunteers are ‘unseen anchors’ working behind the scenes
+2025-06-03 07:08:47,314 - dawn_latest - WARNING - Could not parse date: 2025-06-02 21:02:29+05:00
+2025-06-03 07:08:47,314 - dawn_latest - INFO - Scraped article: Haj pilgrims gather in Makkah under scorching desert sun
+2025-06-03 07:08:47,323 - dawn_latest - WARNING - Could not parse date: 2025-05-31 06:51:59+05:00
+2025-06-03 07:08:47,324 - dawn_latest - INFO - Scraped article: Wily Inter aim to stop PSG juggernaut in Champions League final
+2025-06-03 07:08:47,333 - dawn_latest - WARNING - Could not parse date: 2025-06-02 20:03:18+05:00
+2025-06-03 07:08:47,333 - dawn_latest - INFO - Scraped article: Crypto council agrees on technical committee to draft framework for digital and virtual assets
+2025-06-03 07:08:47,341 - dawn_latest - WARNING - Could not parse date: 2025-05-30 07:11:13+05:00
+2025-06-03 07:08:47,342 - dawn_latest - INFO - Scraped article: ‘Saudis in difficult talks to keep Ronaldo next season’
+2025-06-03 07:08:47,350 - dawn_latest - WARNING - Could not parse date: 2025-05-29 05:05:32+05:00
+2025-06-03 07:08:47,351 - dawn_latest - INFO - Scraped article: Smith to open for England in first ODI against WI
+2025-06-03 07:08:47,405 - dawn_latest - WARNING - Could not parse date: 2025-05-30 07:11:13+05:00
+2025-06-03 07:08:47,406 - dawn_latest - INFO - Scraped article: Pakistan look to bag series as Bangladesh eye comeback
+2025-06-03 07:08:47,592 - dawn_latest - WARNING - Could not parse date: 2025-05-30 10:42:57+05:00
+2025-06-03 07:08:47,593 - dawn_latest - INFO - Scraped article: Arshad Nadeem, Muhammad Yasir qualify for javelin final of Asian Athletics Championship
+2025-06-03 07:08:47,601 - dawn_latest - WARNING - Could not parse date: 2025-05-30 22:34:40+05:00
+2025-06-03 07:08:47,602 - dawn_latest - INFO - Scraped article: World Boxing to introduce mandatory sex testing for all boxers
+2025-06-03 07:08:47,611 - dawn_latest - WARNING - Could not parse date: 2025-06-01 23:50:42+05:00
+2025-06-03 07:08:47,612 - dawn_latest - INFO - Scraped article: Haris hits maiden hundred as Pakistan whitewash Bangladesh
+2025-06-03 07:08:47,620 - dawn_latest - WARNING - Could not parse date: 2025-05-30 14:26:47+05:00
+2025-06-03 07:08:47,621 - dawn_latest - INFO - Scraped article: Noor Zaman qualifies for main draw of British Open
+2025-06-03 07:08:47,629 - dawn_latest - WARNING - Could not parse date: 2025-06-01 06:49:27+05:00
+2025-06-03 07:08:47,630 - dawn_latest - INFO - Scraped article: PSG humble Inter 5-0 to win UCL title
+2025-06-03 07:08:47,639 - dawn_latest - WARNING - Could not parse date: 2025-05-31 06:51:59+05:00
+2025-06-03 07:08:47,639 - dawn_latest - INFO - Scraped article: Brook hails ‘exceptional’ Bethell as England rout West Indies
+2025-06-03 07:08:47,648 - dawn_latest - WARNING - Could not parse date: 2025-05-31 06:51:59+05:00
+2025-06-03 07:08:47,649 - dawn_latest - INFO - Scraped article: Sahibzada sets the tone as Pakistan thrash Bangladesh to seal T20 series
+2025-06-03 07:08:47,659 - dawn_latest - WARNING - Could not parse date: 2025-05-31 13:29:29+05:00
+2025-06-03 07:08:47,659 - dawn_latest - INFO - Scraped article: Arshad Nadeem retains javelin supremacy with gold at Asian Athletics Championship
+2025-06-03 07:08:47,793 - dawn_latest - WARNING - Could not parse date: 2025-06-01 06:51:06+05:00
+2025-06-03 07:08:47,794 - dawn_latest - INFO - Scraped article: Pakistan seek T20 series sweep as Bangladesh eye consolation
+2025-06-03 07:08:49,554 - dawn_latest - INFO - Scraping completed. Total articles scraped: 30
+2025-06-03 07:15:27,131 - dawn_latest - INFO - Starting daily latest news scrape from RSS feed
+2025-06-03 07:15:27,308 - dawn_latest - INFO - Found 28 articles in the feed
+2025-06-03 07:15:27,609 - dawn_latest - INFO - Scraped article: 7 terrorists killed in 2 operations in Balochistan: ISPR from https://www.dawn.com/news/1915170/7-terrorists-killed-in-2-operations-in-balochistan-ispr
+2025-06-03 07:15:27,736 - dawn_latest - INFO - Scraped article: Imaan Mazari wins World Expression Forum award for advocacy of rule of law and justice from https://www.dawn.com/news/1915024/imaan-mazari-wins-world-expression-forum-award-for-advocacy-of-rule-of-law-and-justice
+2025-06-03 07:15:27,868 - dawn_latest - INFO - Scraped article: Man convicted for desecrating Holy Quran outside London’s Turkish consulate from https://www.dawn.com/news/1915020/
+2025-06-03 07:15:28,002 - dawn_latest - INFO - Scraped article: Responsibility of SC judges to speak truth demands courage to defy political pressure: Justice Shah from https://www.dawn.com/news/1915012/responsibility-of-sc-judges-to-speak-truth-demands-courage-to-defy-political-pressure-justice-shah
+2025-06-03 07:15:28,064 - dawn_latest - INFO - Scraped article: Govt to prioritise high-value projects as development budget stands at Rs880bn only: Ahsan Iqbal from https://www.dawn.com/news/1914987/govt-to-prioritise-high-value-projects-as-development-budget-stands-at-rs880bn-only-ahsan-iqbal
+2025-06-03 07:15:28,067 - dawn_latest - INFO - Scraped article: Punjab orders crackdown against arms display, use of Hilux pickup trucks from https://www.dawn.com/news/1915022/punjab-orders-crackdown-against-arms-display-use-of-hilux-pickup-trucks
+2025-06-03 07:15:28,123 - dawn_latest - INFO - Scraped article: Madressah teacher held by Muzaffargarh police for alleged rape from https://www.dawn.com/news/1915016/madressah-teacher-held-by-muzaffargarh-police-for-alleged-rape
+2025-06-03 07:15:28,126 - dawn_latest - INFO - Scraped article: India’s Adani denies sanctions evasion or Iran LPG trade after WSJ reports US probe from https://www.dawn.com/news/1915019/indias-adani-denies-sanctions-evasion-or-iran-lpg-trade-after-wsj-reports-us-probe
+2025-06-03 07:15:28,136 - dawn_latest - INFO - Scraped article: Hey chatbot, is this true? AI ‘factchecks’ sow misinformation from https://www.dawn.com/news/1915082/hey-chatbot-is-this-true-ai-factchecks-sow-misinformation
+2025-06-03 07:15:28,139 - dawn_latest - INFO - Scraped article: Trump, Xi will ‘likely’ talk this week: White House from https://www.dawn.com/news/1915023/trump-xi-will-likely-talk-this-week-white-house
+2025-06-03 07:15:28,143 - dawn_latest - INFO - Scraped article: Shoaib Akhtar, Dr Nauman Niaz reignite feud with defamation notice sent to maverick ex-pacer from https://www.dawn.com/news/1915014/shoaib-akhtar-dr-nauman-niaz-reignite-feud-with-defamation-notice-sent-to-maverick-ex-pacer
+2025-06-03 07:15:28,157 - dawn_latest - INFO - Scraped article: Israel continues to target starving Palestinians from https://www.dawn.com/news/1915086/israel-continues-to-target-starving-palestinians
+2025-06-03 07:15:28,178 - dawn_latest - INFO - Scraped article: PM, Punjab CM can be summoned if local govt polls not held, says CEC from https://www.dawn.com/news/1915105/pm-punjab-cm-can-be-summoned-if-local-govt-polls-not-held-says-cec
+2025-06-03 07:15:28,181 - dawn_latest - INFO - Scraped article: Erdogan wants Turkiye to host Putin-Zelensky-Trump summit from https://www.dawn.com/news/1915085/erdogan-wants-turkiye-to-host-putin-zelensky-trump-summit
+2025-06-03 07:15:28,239 - dawn_latest - INFO - Scraped article: Govt announces four-day Eidul Azha holidays from https://www.dawn.com/news/1914994/govt-announces-four-day-eidul-azha-holidays
+2025-06-03 07:15:28,242 - dawn_latest - INFO - Scraped article: Rain, storms expected in KP, Punjab ahead of Eid from https://www.dawn.com/news/1915109/rain-storms-expected-in-kp-punjab-ahead-of-eid
+2025-06-03 07:15:28,252 - dawn_latest - INFO - Scraping completed. Total articles scraped: 16

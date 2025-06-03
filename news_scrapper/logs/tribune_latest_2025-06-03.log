@@ -1,0 +1,62 @@
+2025-06-03 07:05:26,636 - tribune_latest - INFO - Starting daily Tribune latest news scrape
+2025-06-03 07:05:26,649 - tribune_latest - INFO - Found 0 articles on Tribune latest news page
+2025-06-03 07:05:26,652 - tribune_latest - INFO - Scraping completed. Total articles scraped: 0
+2025-06-03 07:09:52,537 - tribune_latest - INFO - Starting daily Tribune latest news scrape
+2025-06-03 07:09:52,551 - tribune_latest - INFO - Found 0 articles on Tribune latest news page
+2025-06-03 07:09:52,554 - tribune_latest - INFO - Scraping completed. Total articles scraped: 0
+2025-06-03 07:10:43,523 - tribune_latest - INFO - Starting daily Tribune latest news scrape
+2025-06-03 07:10:43,538 - tribune_latest - INFO - Found 0 articles on Tribune latest news page
+2025-06-03 07:10:43,541 - tribune_latest - INFO - Scraping completed. Total articles scraped: 0
+2025-06-03 07:15:59,332 - tribune_latest - INFO - Starting daily Tribune latest news scrape from RSS feed
+2025-06-03 07:15:59,418 - tribune_latest - INFO - Found 50 articles in the feed
+2025-06-03 07:15:59,695 - tribune_latest - INFO - Scraped Tribune article: Bruno Fernandes rejects Al-Hilal, will continue at Manchester United from https://tribune.com.pk/story/2549273/bruno-fernandes-rejects-al-hilal-will-continue-at-manchester-unite
+2025-06-03 07:15:59,788 - tribune_latest - INFO - Scraped Tribune article: MrBeast borrows money from his mom for wedding despite being a billionaire from https://tribune.com.pk/story/2549247/mrbeast-borrows-money-from-his-mom-for-wedding-despite-being-a-billionaire
+2025-06-03 07:15:59,804 - tribune_latest - INFO - Scraped Tribune article: FinMin to approve budget honorariums from https://tribune.com.pk/story/2549246/finmin-to-approve-budget-honorariums
+2025-06-03 07:15:59,806 - tribune_latest - INFO - Scraped Tribune article: Gunmen attack polio team in G-B from https://tribune.com.pk/story/2549244/gunmen-attack-polio-team-in-g-b
+2025-06-03 07:15:59,808 - tribune_latest - INFO - Scraped Tribune article: Pakistan launches diplomatic offensive against India from https://tribune.com.pk/story/2549243/pakistan-launches-diplomatic-offensive-against-india
+2025-06-03 07:15:59,810 - tribune_latest - INFO - Scraped Tribune article: PCC to draft digital assets framework from https://tribune.com.pk/story/2549242/pcc-to-draft-digital-assets-framework
+2025-06-03 07:15:59,881 - tribune_latest - INFO - Scraped Tribune article: Bill Ritter steps down from WABC 5 p.m. ‘Eyewitness News’ after historic run from https://tribune.com.pk/story/2549248/bill-ritter-steps-down-from-wabc-5-pm-eyewitness-news-after-historic-run
+2025-06-03 07:15:59,957 - tribune_latest - INFO - Scraped Tribune article: At least 78 of 216 inmates from Karachi's Malir Jail recaptured: Sindh IGP from https://tribune.com.pk/story/2549257/at-least-216-inmates-flee-karachis-malir-jail-amid-quake-panic
+2025-06-03 07:16:01,496 - tribune_latest - INFO - Scraped Tribune article: PM orders third-party validation of reforms from https://tribune.com.pk/story/2549245/pm-orders-third-party-validation-of-reforms
+2025-06-03 07:16:01,498 - tribune_latest - INFO - Scraped Tribune article: 'Flamethrower' attacker facing US federal hate charges from https://tribune.com.pk/story/2549241/flamethrower-attacker-facing-us-federal-hate-charges
+2025-06-03 07:16:01,530 - tribune_latest - INFO - Scraped Tribune article: UK judge convicts man over blasphemy from https://tribune.com.pk/story/2549240/uk-judge-convicts-man-over-blasphemy
+2025-06-03 07:16:01,559 - tribune_latest - INFO - Scraped Tribune article: Youth shot dead 'by Customs men' during snap checking from https://tribune.com.pk/story/2549215/youth-shot-dead-by-customs-men-during-snap-checking
+2025-06-03 07:16:01,585 - tribune_latest - INFO - Scraped Tribune article: Immediate resumption of cellular services ordered from https://tribune.com.pk/story/2549216/immediate-resumption-of-cellular-services-ordered
+2025-06-03 07:16:01,623 - tribune_latest - INFO - Scraped Tribune article: Luari Sharif shrine dispute echoes in Badin from https://tribune.com.pk/story/2549217/luari-sharif-shrine-dispute-echoes-in-badin
+2025-06-03 07:16:01,627 - tribune_latest - INFO - Scraped Tribune article: JI condemns KE in citywide protests from https://tribune.com.pk/story/2549219/ji-condemns-ke-in-citywide-protests
+2025-06-03 07:16:01,635 - tribune_latest - INFO - Scraped Tribune article: PA unites against unannounced load-shedding from https://tribune.com.pk/story/2549218/pa-unites-against-unannounced-load-shedding
+2025-06-03 07:16:01,691 - tribune_latest - INFO - Scraped Tribune article: $50K fugitive Antoine Massey posts viral video, says he didn’t escape from https://tribune.com.pk/story/2549253/50k-fugitive-antoine-massey-posts-viral-video-says-he-didnt-escape
+2025-06-03 07:16:01,718 - tribune_latest - INFO - Scraped Tribune article: Imran again refuses lie detector tests from https://tribune.com.pk/story/2549222/imran-again-refuses-lie-detector-tests
+2025-06-03 07:16:01,722 - tribune_latest - INFO - Scraped Tribune article: Saquon Barkley named Madden NFL 26 cover star from https://tribune.com.pk/story/2549258/saquon-barkley-named-madden-nfl-26-cover-star
+2025-06-03 07:16:01,731 - tribune_latest - INFO - Scraped Tribune article: Ryan Coogler addresses future of Sinners after massive box office success from https://tribune.com.pk/story/2549252/ryan-coogler-addresses-future-of-sinners-after-massive-box-office-success
+2025-06-03 07:16:01,784 - tribune_latest - INFO - Scraped Tribune article: Brooklyn Beckham and Nicola Peltz hire Meghan Markle’s lawyer amid Beckham family rift from https://tribune.com.pk/story/2549250/brooklyn-beckham-and-nicola-peltz-hire-meghan-markles-lawyer-amid-beckham-family-rift
+2025-06-03 07:16:01,793 - tribune_latest - INFO - Scraped Tribune article: PTI decries Sialkot by-polls as rigged from https://tribune.com.pk/story/2549225/pti-decries-sialkot-by-polls-as-rigged
+2025-06-03 07:16:01,840 - tribune_latest - INFO - Scraped Tribune article: 50 Cent uses Diddy’s anti-Trump video to block possible pardon from https://tribune.com.pk/story/2549251/50-cent-uses-diddys-anti-trump-video-to-block-possible-pardon
+2025-06-03 07:16:01,844 - tribune_latest - INFO - Scraped Tribune article: Punishment must be proportionate: SC from https://tribune.com.pk/story/2549226/punishment-must-be-proportionate-sc
+2025-06-03 07:16:01,903 - tribune_latest - INFO - Scraped Tribune article: 'Nursing hospitals not meeting standards' from https://tribune.com.pk/story/2549229/nursing-hospitals-not-meeting-standards
+2025-06-03 07:16:01,966 - tribune_latest - INFO - Scraped Tribune article: Iran poised to dismiss US nuclear proposal from https://tribune.com.pk/story/2549231/iran-poised-to-dismiss-us-nuclear-proposal
+2025-06-03 07:16:03,400 - tribune_latest - INFO - Scraped Tribune article: Ministry advises 'strict adherence' to Saudi laws from https://tribune.com.pk/story/2549220/ministry-advises-strict-adherence-to-saudi-laws
+2025-06-03 07:16:03,488 - tribune_latest - INFO - Scraped Tribune article: PML-Q leaders urged to highlight military's role from https://tribune.com.pk/story/2549221/pml-q-leaders-urged-to-highlight-militarys-role
+2025-06-03 07:16:03,584 - tribune_latest - INFO - Scraped Tribune article: Delay in Punjab LG polls irks CEC from https://tribune.com.pk/story/2549223/delay-in-punjab-lg-polls-irks-cec
+2025-06-03 07:16:03,590 - tribune_latest - INFO - Scraped Tribune article: Pakistan eyes 8,000MW target with Chashma-5 project from https://tribune.com.pk/story/2549224/pakistan-eyes-8000mw-target-with-chashma-5-project
+2025-06-03 07:16:03,660 - tribune_latest - INFO - Scraped Tribune article: NAB to oppose Imran, Bushra's plea in IHC from https://tribune.com.pk/story/2549228/nab-to-oppose-imran-bushras-plea-in-ihc
+2025-06-03 07:16:03,672 - tribune_latest - INFO - Scraped Tribune article: First Eid train departs from Karachi from https://tribune.com.pk/story/2549230/first-eid-train-departs-from-karachi
+2025-06-03 07:16:03,696 - tribune_latest - INFO - Scraped Tribune article: PM replies to queries in defamation suit from https://tribune.com.pk/story/2549227/pm-replies-to-queries-in-defamation-suit
+2025-06-03 07:16:03,797 - tribune_latest - INFO - Scraped Tribune article: German court rules against migration crackdown from https://tribune.com.pk/story/2549239/german-court-rules-against-migration-crackdown
+2025-06-03 07:16:03,803 - tribune_latest - INFO - Scraped Tribune article: Drake expands sports gambling with $750,000 bet on cricket through Stake from https://tribune.com.pk/story/2549259/drake-expands-sports-gambling-with-750000-bet-on-cricket-through-stake
+2025-06-03 07:16:03,843 - tribune_latest - INFO - Scraped Tribune article: Trump, Xi will 'likely' talk this week from https://tribune.com.pk/story/2549232/trump-xi-will-likely-talk-this-week
+2025-06-03 07:16:03,908 - tribune_latest - INFO - Scraped Tribune article: Lois Boisson shocks Jessica Pegula at Roland Garros, reaches quarter-finals from https://tribune.com.pk/story/2549262/lois-boisson-shocks-jessica-pegula-at-roland-garros-reaches-quarter-finals
+2025-06-03 07:16:05,208 - tribune_latest - INFO - Scraped Tribune article: UN chief calls for probe into Gaza aid site deaths from https://tribune.com.pk/story/2549233/un-chief-calls-for-probe-into-gaza-aid-site-deaths
+2025-06-03 07:16:05,273 - tribune_latest - INFO - Scraped Tribune article: The Accountant 2 release date on Prime Video revealed from https://tribune.com.pk/story/2549264/the-accountant-2-release-date-on-prime-video-revealed
+2025-06-03 07:16:05,294 - tribune_latest - INFO - Scraped Tribune article: Polish nationalist wins presidency from https://tribune.com.pk/story/2549235/polish-nationalist-wins-presidency
+2025-06-03 07:16:05,308 - tribune_latest - INFO - Scraped Tribune article: Russia, Ukraine agree new POW swap from https://tribune.com.pk/story/2549234/russia-ukraine-agree-new-pow-swap
+2025-06-03 07:16:05,333 - tribune_latest - INFO - Scraped Tribune article: Britain unveils radical defence overhaul from https://tribune.com.pk/story/2549236/britain-unveils-radical-defence-overhaul
+2025-06-03 07:16:05,336 - tribune_latest - INFO - Scraped Tribune article: Seven 'Indian-backed terrorists' killed in Balochistan from https://tribune.com.pk/story/2549265/seven-indian-backed-terrorists-killed-in-balochistan-operations
+2025-06-03 07:16:05,363 - tribune_latest - INFO - Scraped Tribune article: Tom Holland new Non-Alcoholic Beer: Is This What a Superhero Should Be Selling? from https://tribune.com.pk/story/2549272/tom-holland-new-non-alcoholic-beer-is-this-what-a-superhero-should-be-selling
+2025-06-03 07:16:05,379 - tribune_latest - INFO - Scraped Tribune article: Deadly Tomatoes: US FDA recalls tomatoes over risk of salmonella from https://tribune.com.pk/story/2549268/deadly-tomatoes-us-fda-recalls-tomatoes-over-risk-of-salmonella
+2025-06-03 07:16:05,383 - tribune_latest - INFO - Scraped Tribune article: Strong 6.2 earthquake strikes southwestern Turkey, 7 injured from https://tribune.com.pk/story/2549266/strong-62-earthquake-strikes-southwestern-turkey-7-injured
+2025-06-03 07:16:05,489 - tribune_latest - INFO - Scraped Tribune article: 'From near-certainty to a coin flip' from https://tribune.com.pk/story/2549237/from-near-certainty-to-a-coin-flip
+2025-06-03 07:16:05,536 - tribune_latest - INFO - Scraped Tribune article: Australia gifts patrol boat to strategic Maldives from https://tribune.com.pk/story/2549238/australia-gifts-patrol-boat-to-strategic-maldives
+2025-06-03 07:16:05,669 - tribune_latest - INFO - Scraped Tribune article: Detroit Lions' Frank Ragnow announces shock retirement at 29 from https://tribune.com.pk/story/2549263/detroit-lions-frank-ragnow-announces-shock-retirement-at-29
+2025-06-03 07:16:05,671 - tribune_latest - INFO - Scraped Tribune article: Fans remember beloved 'John Redcorn' character after Jonathan Joss shot dead from https://tribune.com.pk/story/2549260/fans-remember-beloved-john-redcorn-character-after-jonathan-joss-shot-dead
+2025-06-03 07:16:05,678 - tribune_latest - INFO - Scraping completed. Total articles scraped: 50

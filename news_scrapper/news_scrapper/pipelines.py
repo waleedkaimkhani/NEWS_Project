@@ -13,17 +13,21 @@ class NewsValidationPipeline:
         adapter = ItemAdapter(item)
         
         # Check required fields
-        required_fields = ['heading', 'url']
+        required_fields = ['heading', 'url', 'content'] # Added 'content'
         for field in required_fields:
-            if not adapter.get(field):
+            if not adapter.get(field): # Check if field is missing or empty
                 raise DropItem(f"Missing {field} in {adapter.get('url')}")
         
         # Clean text fields
-        text_fields = ['heading', 'content', 'author', 'category']
+        text_fields = ['heading', 'content', 'author', 'category', 'date'] # Added 'date'
         for field in text_fields:
-            if adapter.get(field):
-                adapter[field] = adapter[field].strip()
-        
+            value = adapter.get(field)
+            if isinstance(value, str): # Ensure it's a string before stripping
+                adapter[field] = value.strip()
+            elif value is None and field == 'content': # Explicitly check for None content after it's required
+                 raise DropItem(f"Missing {field} in {adapter.get('url')}")
+
+
         # Add metadata
         adapter['processed_at'] = datetime.now().isoformat()
         adapter['spider_name'] = spider.name
